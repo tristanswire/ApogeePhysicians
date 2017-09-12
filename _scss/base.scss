@@ -1,0 +1,116 @@
+/*
+	Theme Name: Story Tree furniture
+	Theme URI: http://tristanswire.com
+	Author: Tristan Swire
+	Author URI: http://tristanswire.com
+*/
+
+/*************** INITIAL IMPORTS ***************/
+
+@import "normalize";
+@import "mixins";
+@import "colors";
+@import "modules";
+
+/*************** DEFUALT STYLES	***************/
+
+html,body {
+	overflow-x:hidden;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	color: $black;
+	font:
+		0.875em/1.8
+		'Montserrat', "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	@include bp(44) {
+		font: 1em/1.4;
+	}
+}
+
+h1,h2,h3,h4,h5,h6 {
+	line-height: 1;
+}
+
+p {
+	line-height: 1.5;
+}
+
+a {
+	color: $blue;
+	text-decoration: none;
+	transition: all 250ms ease-in-out;
+	&:hover {
+		color: $blue;
+	}
+}
+
+.btn {
+	@include button( $blue, $blue, #fff );
+}
+
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	stroke-width: 0;
+	stroke: currentColor;
+	fill: currentColor;
+	vertical-align: middle;
+	margin-top: -0.1em;
+}
+
+/*************** CLEARFIX & RESPONSIVE BOXES ***************/
+
+/* Clearfix */
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+.group {
+	zoom:1;
+}
+
+/* Box-sizing */
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Responsive Images */
+img {
+	max-width: 100%;
+	height: auto;
+}
+.assistive-text,
+.screen-reader-text {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+/* Alignment */
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
+
+/*************** FILE IMPORTS ***************/
+
+@import "header";

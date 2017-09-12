@@ -1,0 +1,179 @@
+/*Basic Grid*/
+.site {
+	width: 100%;
+	max-width: 80em;
+	margin: 0 auto;
+	/*-webkit-box-shadow:	0 2px 4px rgba(0,0,0,0.3);
+	box-shadow:	0 2px 4px rgba(0,0,0,0.3);*/
+}
+.wrap {
+	width: 90%;
+	max-width: 67.5em;
+	margin: 0 auto;
+	@include bp(62.5) {
+		width: 100%;
+	}
+}
+.sm-wrap {
+	position: relative;
+	width: 90%;
+	max-width: 45em;
+	margin: 0 auto;
+	@include bp(50) {
+		width: 100%;
+	}
+}
+
+.half {
+	margin-bottom: 2em;
+	@include bp(44) {
+		float: left;
+		width: 47.5%;
+		margin-bottom: 0;
+		&.first {
+			margin-right: 5%;
+		}
+	}
+}
+.halves {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	> li {
+		display: block;
+		margin: 0 0 1em;
+	}
+	@include bp(44) {
+		> li {
+			float: left;
+			width: 47.5%;
+			margin: 0 5% 1em 0;
+			&:nth-child(even) {
+				margin: 0 0 1em;
+			}
+		}
+	}
+}
+.two-third {
+	@include bp(44) {
+		float: left;
+		width: 65%;
+		&.first {
+			margin-right: 5%;
+		}
+	}
+}
+.third {
+	@include bp(44) {
+		float: left;
+		width: 30%;
+		&.first {
+			margin-right: 5%;
+		}
+	}
+}
+.four-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	> li {
+		float: left;
+		width: 46%;
+		margin: 0 8% 1em 0;
+		&:last-child, &:nth-child(even) {
+			margin: 0;
+		}
+	}
+	@include bp(50) {
+		> li {
+			width: 22%;
+			margin: 0 4% 1em 0;
+			&:nth-child(even) {
+				margin: 0 4% 1em 0;
+			}
+			&:last-child, &:nth-child(4n) {
+				margin: 0 0 1em;
+			}
+		}
+	}
+}
+.three-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	> li {
+		display: block;
+		margin-bottom: 1em;
+
+	}
+	@include bp(44) {
+		> li {
+			float: left;
+			width: 30%;
+			margin: 0 5% 1em 0;
+			&:last-child, &:nth-child(3n) {
+				margin: 0 0 1em;
+			}
+			&:nth-child(4n) {
+				clear: left;
+			}
+		}
+	}
+}
+.two-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	> li {
+		display: block;
+		margin-bottom: 1em;
+	}
+	@include bp(44) {
+		> li {
+			float: left;
+			width: 45%;
+			margin: 0 10% 1em 0;
+			&:last-child, &:nth-child(even) {
+				margin: 0 0 1em;
+			}
+		}
+	}
+}
+.centered-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	li {
+		display: inline-block;
+		max-width: 47%;
+		margin: 0 6% 1em 0;
+		vertical-align: top;
+		&:nth-child(even) {
+			margin: 0 0 1em;
+		}
+	}
+	@include bp(44) {
+		li {
+			max-width: 30%;
+			margin: 0 5% 1em 0;
+			&:nth-child(even) {
+				margin: 0 5% 1em 0;
+			}
+			&:last-child, &:nth-child(3n) {
+				margin: 0 0 1em;
+			}
+		}
+	}
+}
+
+hr {
+	background-color: $black;
+	border: 0.05em solid $black;
+}
+
+blockquote {
+	font-size: 0.875em;
+	font-style: italic;
+	color: darken($black, 5%);
+}
