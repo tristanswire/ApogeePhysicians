@@ -9,6 +9,353 @@
 	],
 "creatorBuild": "25900",
 "files": {
+	"\/.gitattributes": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.gitattributes",
+		"oF": 0
+		},
+	"\/404.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/404.php",
+		"oF": 0
+		},
+	"\/_js\/functions-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/_js\/functions-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/_js\/functions.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/_js\/functions-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/_scss\/base.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/style.css",
+		"oF": 2,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/_scss\/colors.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_scss\/colors.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/_scss\/header.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_scss\/header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/_scss\/mixins.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_scss\/mixins.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/_scss\/modules.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_scss\/modules.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/_scss\/normalize.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_scss\/normalize.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/archive.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive.php",
+		"oF": 0
+		},
+	"\/comments.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/comments.php",
+		"oF": 0
+		},
+	"\/footer.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/footer.php",
+		"oF": 0
+		},
+	"\/functions.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/functions.php",
+		"oF": 0
+		},
+	"\/header.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/header.php",
+		"oF": 0
+		},
+	"\/inc\/custom-header.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/custom-header.php",
+		"oF": 0
+		},
+	"\/inc\/customizer.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/customizer.php",
+		"oF": 0
+		},
+	"\/inc\/jetpack.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/jetpack.php",
+		"oF": 0
+		},
+	"\/inc\/template-functions.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/template-functions.php",
+		"oF": 0
+		},
+	"\/inc\/template-tags.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/template-tags.php",
+		"oF": 0
+		},
+	"\/index.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/index.php",
+		"oF": 0
+		},
+	"\/languages\/apogee-physicians.pot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/languages\/apogee-physicians.pot",
+		"oF": 0
+		},
+	"\/languages\/readme.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/languages\/readme.txt",
+		"oF": 0
+		},
+	"\/layouts\/content-sidebar.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/layouts\/content-sidebar-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/layouts\/sidebar-content.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/layouts\/sidebar-content-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/LICENSE": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/LICENSE",
+		"oF": 0
+		},
+	"\/page-careers.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-careers.php",
+		"oF": 0
+		},
+	"\/page-home.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-home.php",
+		"oF": 0
+		},
+	"\/page-services.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-services.php",
+		"oF": 0
+		},
+	"\/page.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page.php",
+		"oF": 0
+		},
+	"\/phpcs.xml.dist": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/phpcs.xml.dist",
+		"oF": 0
+		},
+	"\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/readme.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/readme.txt",
+		"oF": 0
+		},
+	"\/rtl.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/rtl-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/screenshot.png": {
+		"ft": 32768,
+		"iS": 8487,
+		"oA": 0,
+		"oAP": "\/screenshot.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/search.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/search.php",
+		"oF": 0
+		},
+	"\/sidebar.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sidebar.php",
+		"oF": 0
+		},
+	"\/single.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/single.php",
+		"oF": 0
+		},
+	"\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/style.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/style.css.map",
+		"oF": 0
+		},
+	"\/template-parts\/content-none.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/content-none.php",
+		"oF": 0
+		},
+	"\/template-parts\/content-page.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/content-page.php",
+		"oF": 0
+		},
+	"\/template-parts\/content-search.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/content-search.php",
+		"oF": 0
+		},
+	"\/template-parts\/content.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/content.php",
+		"oF": 0
+		}
 	},
 "hooks": [
 	],
@@ -16,7 +363,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 526945388,
-	"displayValue": "Apogee Physicians",
+	"displayValue": "ApogeePhysicians",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-ceiling"
 	},
