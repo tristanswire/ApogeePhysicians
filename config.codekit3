@@ -21,6 +21,26 @@
 		"oAP": "\/404.php",
 		"oF": 0
 		},
+	"\/_images\/aulogo.jpg": {
+		"ft": 16384,
+		"iS": 165421,
+		"oA": 0,
+		"oAP": "\/_images\/aulogo.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/deepak-gray.jpg": {
+		"ft": 16384,
+		"iS": 248765,
+		"oA": 0,
+		"oAP": "\/_images\/deepak-gray.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/_js\/functions-min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -76,6 +96,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/_scss\/header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/_scss\/home.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_scss\/home.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

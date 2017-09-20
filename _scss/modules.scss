@@ -26,10 +26,10 @@
 	margin-bottom: 1em;
 	@include bp(44) {
 		float: left;
-		width: 48%;
+		width: 49%;
 		margin-bottom: 0;
 		&.first {
-			margin-right: 4%;
+			margin-right: 2%;
 		}
 	}
 }

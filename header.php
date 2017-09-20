@@ -24,7 +24,7 @@
 <div id="page" class="site site-wrap">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'apogee-physicians' ); ?></a>
 
-	<header id="masthead" class="site-header">
+	<header id="masthead" class="site-header header">
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
@@ -41,7 +41,7 @@
 			<?php
 			endif; ?>
 		</div><!-- .site-branding -->
-
+		<a href="#" class="btn">HELLO</a>
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'apogee-physicians' ); ?></button>
 			<?php

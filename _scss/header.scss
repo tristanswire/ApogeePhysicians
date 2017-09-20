@@ -1,0 +1,28 @@
+.header {
+    background-color: $blue;
+    @include bp(50) {
+        background-color: gray;
+    }
+    h2 {
+        color: red;
+    }
+    .btn {
+        @include button($blue, #fff, $blue);
+        &:hover {
+            background-color: darken($blue,10%);
+        }
+    }
+}
+
+
+/*.header {
+    background-color: blue;
+}
+.header h2 {
+    color: red;
+}
+@media screen and (min-width: 50em) {
+    .header {
+        background-color: darken($blue, 20%);
+    }
+}*/

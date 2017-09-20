@@ -1,8 +1,8 @@
 /*
-	Theme Name: Story Tree furniture
-	Theme URI: http://tristanswire.com
-	Author: Tristan Swire
-	Author URI: http://tristanswire.com
+	Theme Name: Apogee Physicians
+	Theme URI: http://apogeephysicians.com
+	Author: Apogee Physicians
+	Author URI: http://apogeephysicians.com
 */
 
 /*************** INITIAL IMPORTS ***************/
@@ -15,7 +15,7 @@
 /*************** DEFUALT STYLES	***************/
 
 html,body {
-	overflow-x:hidden;
+	//overflow-x: hidden;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -114,3 +114,4 @@ img {
 /*************** FILE IMPORTS ***************/
 
 @import "header";
+@import "home";
