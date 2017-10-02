@@ -1,0 +1,220 @@
+.list-container {
+    padding: 4em 0;
+    text-align: center;
+    @include bp(54) {
+        padding: 4em 0;
+    }
+    h2,
+    h3 {
+        color: $blue;
+    }
+    h2 {
+        margin-top: 0;
+    }
+    > p {
+        padding-bottom: 4em;
+    }
+    .icon {
+        font-size: 3.5em;
+        color: transparent;
+        stroke: $blue;
+    }
+    li {
+        &:last-child {
+            margin-bottom: 0;
+            p {
+                padding-bottom: 0;
+            }
+        }
+        p {
+            padding-bottom: 2em;
+            max-width: 24em;
+            margin: 0 auto;
+            @include bp(54) {
+                max-width: none;
+                padding: 0 0.75em;
+            }
+        }
+    }
+}
+.side-by-side {
+    padding: 3em 0;
+    text-align: center;
+    @include bp(54) {
+        padding: 4em 0 0;
+        text-align: left;
+    }
+    h2 {
+        margin-top: 0;
+    }
+    img {
+        display: none;
+        margin: 0 auto;
+        @include bp(54) {
+            display: block;
+            margin-right: 0;
+        }
+    }
+    p {
+        @include bp(54) {
+            padding-bottom: 1em;
+        }
+    }
+    .content {
+        @include bp(54) {
+            padding-top: 4em;
+        }
+    }
+}
+.visa {
+    padding: 2em 0;
+    @include bp(54) {
+        padding: 4em 0 0;
+    }
+    h2,
+    p {
+        text-align: center;
+    }
+    p {
+        padding-bottom: 1em;
+        @include bp(54) {
+            padding-bottom: 4em;
+        }
+    }
+    img {
+        display: none;
+        margin: -2em auto 0;
+        @include bp(54) {
+            display: block;
+        }
+    }
+    ul {
+        padding-bottom: 1em;
+    }
+}
+.container-bottom {
+    h4 {
+        margin-top: 0.25em;
+        font-weight: 600;
+        color: $blue;
+    }
+    span {
+        margin-top: 0.35em;
+        display: block;
+        color: $gray;
+        font-size: 0.875rem;
+        font-weight: 400;
+    }
+    a {
+        display: block;
+        padding-bottom: 0.35em;
+        &:hover {
+            color: $orange;
+            svg {
+                color: $orange;
+            }
+        }
+    }
+    svg {
+        transition: color 250ms ease;
+        margin-right: 0.35em;
+        vertical-align: middle;
+    }
+}
+.container-background {
+    background-image: url(_images/apogee-difference.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 4em 0 8em;
+    p {
+        padding-bottom: 2em;
+    }
+}
+.dropdown-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 60em;
+    > li {
+        @include bp(44) {
+            float: left;
+            width: 49%;
+            margin-right: 2%;
+            &:nth-child(2n+2) {
+                margin-right: 0;
+            }
+        }
+        > a {
+            position: relative;
+            display: block;
+            background-color: #fff;
+            padding: 0.5em 1em;
+            text-align: left;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 1em;
+            &:focus {
+                outline-color: transparent;
+            }
+            &:hover {
+                background-color: darken($blue,10%);
+                color: #fff;
+            }
+        }
+        &.visible {
+            a {
+                background-color: darken($blue,10%);
+                color: #fff;
+            }
+            .icon-add {
+                display: none;
+            }
+            .icon-minus {
+                display: block;
+            }
+        }
+    }
+    svg {
+        font-size: 1.25em;
+        position: absolute;
+        right: 0.5em;
+        top: 35%;
+        &.icon-minus {
+            display: none;
+        }
+    }
+    ul {
+        display: none;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background-color: #fff;
+        text-align: left;
+        li {
+            position: relative;
+            padding: 1.25em 1.25em 1.25em 3em;
+            font-size: 1rem;
+            color: $blue;
+            border-bottom: 0.05em solid rgba(0, 113, 206, 0.4);
+            line-height: 1.2;
+            font-weight: 400;
+            &:last-child {
+                border: none;
+            }
+            span {
+                width: 1em;
+                height: 1em;
+                border-radius: 25%;
+                border: 0.1em solid rgba(0, 113, 206, 0.9);
+                background-color: rgba(0,113,206,0.7);
+                display: inline-block;
+                margin-right: 1em;
+                position: absolute;
+                top: 35%;
+                left: 1em;
+            }
+        }
+    }
+}

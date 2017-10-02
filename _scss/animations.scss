@@ -1,0 +1,56 @@
+svg {
+    border: none;
+    display: block;
+}
+circle {
+    stroke: #f0f0f0;
+    stroke-width: 80;
+    fill: none;
+    &.stat {
+        animation: dash 5s linear forwards;
+        stroke: #5bccb4;
+        stroke-dasharray: 1130;
+        stroke-dashoffset: 1130;
+    }
+}
+mask rect {
+    fill: white;
+    stroke: none;
+}
+rect.stat {
+    animation: stat 5s linear forwards;
+    fill: white;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 226;
+    }
+}
+@keyframes stat {
+    100% {
+        fill: #ea452e;
+    }
+}
+
+figure {
+    margin: 2em auto;
+    padding: 0;
+    position: relative;
+    width: 440px;
+    figcaption {
+        color: white;
+        left: 50%;
+        position: absolute;
+        top: 150px;
+        transform: translateX(-50%);
+        span {
+            font: bold 4.5em/1 Helvetica, Arial;
+            display: block;
+            text-indent: 20px;
+            &:after {
+                content: '%';
+            }
+        }
+    }
+}

@@ -20,21 +20,80 @@ html,body {
 }
 
 body {
+	background-color: #e8e8e8;
 	color: $black;
-	font:
-		0.875em/1.8
-		'Montserrat', "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	@include bp(44) {
-		font: 1em/1.4;
+	font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.site {
+	background-color: #fff;
+}
+
+h1,
+h2 {
+	font-weight: 800;
+}
+h1 {
+	font-size: 2.5rem;
+	@include bp(54) {
+		font-size: 3.75rem;
 	}
+}
+h2 {
+	font-size: 1.75rem;
+	@include bp(54) {
+		font-size: 2.25rem;
+	}
+}
+
+h3 {
+	font-size: 1.15rem;
+	font-weight: 700;
+	@include bp(62.5) {
+		font-size: 1.25rem;
+	}
+}
+
+h4 {
+	font-weight: 500;
 }
 
 h1,h2,h3,h4,h5,h6 {
 	line-height: 1;
+	&.blue {
+		color: $blue;
+	}
+	&.white {
+		color: #fff;
+	}
+}
+
+p,
+li {
+	font-weight: 400;
+	line-height: 165%;
+	font-size: 1rem;
+	@include bp(44) {
+		font-size: 1.15rem;
+	}
+	@include bp(60) {
+		font-size: 1.25rem;
+	}
 }
 
 p {
-	line-height: 1.5;
+	&.white {
+		color: #fff;
+	}
+	&.light {
+		font-weight: 300;
+	}
+	&.p-wrap {
+		max-width: 36em;
+		margin: 0 auto;
+		@include bp(54) {
+			max-width: 44em;
+		}
+	}
 }
 
 a {
@@ -48,17 +107,46 @@ a {
 
 .btn {
 	@include button( $blue, $blue, #fff );
+	&.outline {
+		@include button( $blue, transparent, $blue);
+		&:hover {
+			background-color: $blue;
+			color: #fff;
+		}
+	}
+	&.outline-white {
+		@include button( #fff, transparent, #fff);
+		&:hover {
+			background-color: #fff;
+			color: $blue;
+		}
+	}
+	&.outline-blue {
+		@include button( $blue, transparent, $blue);
+		&:hover {
+			background-color: $blue;
+			color: #fff;
+		}
+	}
+	&.outline-orange {
+		@include button( $orange, transparent, $orange);
+		&:hover {
+			background-color: $orange;
+			color: #fff;
+		}
+	}
+	&.black {
+		@include button( $black, $black, #fff);
+	}
+	&.orange {
+		@include button( $orange, $orange, #fff);
+	}
+	&.first {
+		margin-right: 2em;
+	}
 }
-
-.icon {
-	display: inline-block;
-	width: 1em;
-	height: 1em;
-	stroke-width: 0;
-	stroke: currentColor;
-	fill: currentColor;
-	vertical-align: middle;
-	margin-top: -0.1em;
+.bg-gray {
+	background-color: $gray-back;
 }
 
 /*************** CLEARFIX & RESPONSIVE BOXES ***************/
@@ -113,5 +201,12 @@ img {
 
 /*************** FILE IMPORTS ***************/
 
+@import "carousel-slick";
+@import "aos";
+@import "animations";
+@import "icons";
 @import "header";
 @import "home";
+@import "footer";
+@import "careers";
+@import "carousel";

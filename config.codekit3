@@ -21,21 +21,143 @@
 		"oAP": "\/404.php",
 		"oF": 0
 		},
-	"\/_images\/aulogo.jpg": {
-		"ft": 16384,
-		"iS": 165421,
+	"\/_fonts\/slick.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_fonts\/slick.eot",
+		"oF": 0
+		},
+	"\/_fonts\/slick.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/_fonts\/slick.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/_fonts\/slick.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_fonts\/slick.ttf",
+		"oF": 0
+		},
+	"\/_fonts\/slick.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_fonts\/slick.woff",
+		"oF": 0
+		},
+	"\/_images\/ajax-loader.gif": {
+		"ft": 4194304,
+		"iS": 4178,
 		"oA": 0,
-		"oAP": "\/_images\/aulogo.jpg",
+		"oAP": "\/_images\/ajax-loader.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/_images\/ap-logo-white.png": {
+		"ft": 32768,
+		"iS": 3974,
+		"oA": 0,
+		"oAP": "\/_images\/ap-logo-white.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/_images\/ap-logo.png": {
+		"ft": 32768,
+		"iS": 29386,
+		"oA": 0,
+		"oAP": "\/_images\/ap-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/_images\/apogee-difference.jpg": {
+		"ft": 16384,
+		"iS": 138683,
+		"oA": 0,
+		"oAP": "\/_images\/apogee-difference.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/_images\/deepak-gray.jpg": {
+	"\/_images\/au-logo.png": {
+		"ft": 32768,
+		"iS": 767630,
+		"oA": 0,
+		"oAP": "\/_images\/au-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/_images\/career-map.png": {
+		"ft": 32768,
+		"iS": 70344,
+		"oA": 0,
+		"oAP": "\/_images\/career-map.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/_images\/careers-hero-img.jpg": {
+		"ft": 16384,
+		"iS": 126755,
+		"oA": 0,
+		"oAP": "\/_images\/careers-hero-img.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/home-hero-img.jpg": {
 		"ft": 16384,
 		"iS": 248765,
 		"oA": 0,
-		"oAP": "\/_images\/deepak-gray.jpg",
+		"oAP": "\/_images\/home-hero-img.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/physician-2.png": {
+		"ft": 32768,
+		"iS": 251549,
+		"oA": 0,
+		"oAP": "\/_images\/physician-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/_images\/physician.png": {
+		"ft": 32768,
+		"iS": 231933,
+		"oA": 0,
+		"oAP": "\/_images\/physician.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/_images\/services-hero-img.jpg": {
+		"ft": 16384,
+		"iS": 137827,
+		"oA": 0,
+		"oAP": "\/_images\/services-hero-img.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -61,6 +183,52 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/_js\/library\/aos.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/_js\/library\/aos-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/_js\/library\/slick.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/_js\/library\/slick.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/_scss\/animations.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_scss\/animations.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/_scss\/aos.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_scss\/aos.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/_scss\/base.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -74,6 +242,45 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/_scss\/careers.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_scss\/careers.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/_scss\/carousel-slick.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_scss\/carousel-slick.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/_scss\/carousel.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_scss\/carousel.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/_scss\/colors.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -83,6 +290,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/_scss\/colors.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/_scss\/footer.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_scss\/footer.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -109,6 +329,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/_scss\/home.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/_scss\/icons.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_scss\/icons.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -152,6 +385,114 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/_svg\/icon-briefcase.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_svg\/icon-briefcase.php",
+		"oF": 0
+		},
+	"\/_svg\/icon-chevron-left-black.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/_svg\/icon-chevron-left-black.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/_svg\/icon-chevron-left.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_svg\/icon-chevron-left.php",
+		"oF": 0
+		},
+	"\/_svg\/icon-chevron-left.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/_svg\/icon-chevron-left.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/_svg\/icon-chevron-right-black.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/_svg\/icon-chevron-right-black.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/_svg\/icon-chevron-right.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_svg\/icon-chevron-right.php",
+		"oF": 0
+		},
+	"\/_svg\/icon-chevron-right.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/_svg\/icon-chevron-right.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/_svg\/icon-clipboard.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_svg\/icon-clipboard.php",
+		"oF": 0
+		},
+	"\/_svg\/icon-email.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_svg\/icon-email.php",
+		"oF": 0
+		},
+	"\/_svg\/icon-heart.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_svg\/icon-heart.php",
+		"oF": 0
+		},
+	"\/_svg\/icon-menu.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_svg\/icon-menu.php",
+		"oF": 0
+		},
+	"\/_svg\/icon-minus-box.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_svg\/icon-minus-box.php",
+		"oF": 0
+		},
+	"\/_svg\/icon-phone.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_svg\/icon-phone.php",
+		"oF": 0
+		},
+	"\/_svg\/icon-plus-box.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_svg\/icon-plus-box.php",
+		"oF": 0
+		},
+	"\/ajax-loader.gif": {
+		"ft": 4194304,
+		"iS": 4178,
+		"oA": 0,
+		"oAP": "\/ajax-loader.gif",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/archive.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -162,6 +503,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/comments.php",
+		"oF": 0
+		},
+	"\/favicon.ico": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/favicon.ico",
 		"oF": 0
 		},
 	"\/footer.php": {
@@ -217,6 +564,36 @@
 		"oA": 2,
 		"oAP": "\/index.php",
 		"oF": 0
+		},
+	"\/js\/customizer.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/customizer-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/navigation.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/navigation-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/skip-link-focus-fix.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/skip-link-focus-fix-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"\/languages\/apogee-physicians.pot": {
 		"ft": 8192,
@@ -393,6 +770,20 @@
 "hooks": [
 	],
 "manualImportLinks": {
+	"\/_js\/functions.js": [
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/_js\/library\/slick.min.js",
+			"position": 0,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/_js\/library\/aos.js",
+			"position": 1,
+			"type": 0
+			}
+		]
 	},
 "projectAttributes": {
 	"creationDate": 526945388,

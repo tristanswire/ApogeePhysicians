@@ -13,10 +13,16 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
+	<title>Apogee Physicians</title>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/style.css"></link>
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" type="image/x-icon">
+	<!-- Typekit Font Scripts -->
+	<script src="https://use.typekit.net/jze2xpr.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	<?php wp_head(); ?>
 </head>
 
@@ -24,33 +30,30 @@
 <div id="page" class="site site-wrap">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'apogee-physicians' ); ?></a>
 
-	<header id="masthead" class="site-header header">
-		<div class="site-branding">
+	<header class="header group">
+		<!-- nav logo -->
+		<div class="header-logo">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+				<img src="<?php bloginfo('template_directory'); ?>/_images/ap-logo.png" alt="..."/>
+			</a>
+		</div>
+		<!-- menu trigger -->
+		<a href="#" class="menu-trigger"><?php //include('_svg/icon-menu.php'); ?></a>
+		<!-- main navigation -->
+		<nav id="site_navigation" class="main <?php if (is_page( 'services' )) { echo 'services'; } elseif (is_page( 'home' )) { echo 'home'; }; ?>">
 			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;
+				$siteNavigation = array(
+					'menu_id'         => 'site-menu',
+					'container'       => false,
+					'echo'            => false,
+					'items_wrap'      => '%3$s',
+					'depth'           => 0,
+				);
 
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
-		</div><!-- .site-branding -->
-		<a href="#" class="btn">HELLO</a>
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'apogee-physicians' ); ?></button>
-			<?php
-				wp_nav_menu( array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				) );
+				echo strip_tags(wp_nav_menu( $siteNavigation ), '<a>' );
 			?>
 		</nav><!-- #site-navigation -->
+
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

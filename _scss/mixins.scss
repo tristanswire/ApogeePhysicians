@@ -1,12 +1,15 @@
 @mixin bp($point) {
+	@if $point == 100 {
+		@media (min-width: 100em) { @content; }
+	}
 	@if $point == 80 {
 		@media (min-width: 80em) { @content; }
 	}
 	@else if $point == 62.5 {
 		@media (min-width: 62.5em) { @content; }
 	}
-	@else if $point == 50 {
-		@media (min-width: 50em) { @content; }
+	@else if $point == 54 {
+		@media (min-width: 54em) { @content; }
 	}
 	@else if $point == 44 {
 		@media (min-width: 44em) { @content; }
@@ -21,16 +24,19 @@
 
 @mixin button($border-color, $back-color, $text-color) {
 	display: inline-block;
-	padding: 0.5em 1.25em;
-	font-size: 0.875em;
+	padding: 0.6em 2.25em;
 	text-align: center;
-	text-transform: uppercase;
+	text-decoration: none;
 	border: 0.05em solid $back-color;
 	background-color: $back-color;
 	border: 1px solid $border-color;
 	color: $text-color;
-	font-family: "museo-sans",sans-serif;
+	font-family: "proxima-nova",sans-serif;
 	font-weight: 700;
+	font-size: 1.1em;
+	@include bp(80) {
+		font-size: 1.15em;
+	}
 	&:hover {
 		border-color: darken($back-color, 10%);
 		background-color: darken($back-color, 10%);

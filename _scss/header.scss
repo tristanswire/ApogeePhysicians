@@ -1,28 +1,171 @@
 .header {
-    background-color: $blue;
-    @include bp(50) {
-        background-color: gray;
+    position: relative;
+    padding: 1em 2em;
+}
+.header-logo {
+    @include bp(54) {
+        float: left;
     }
-    h2 {
-        color: red;
-    }
-    .btn {
-        @include button($blue, #fff, $blue);
-        &:hover {
-            background-color: darken($blue,10%);
+    img {
+        display: block;
+        max-width: 10em;
+        width: 100%;
+        @include bp(54) {
+            max-width: 14em;
         }
     }
 }
-
-
-/*.header {
-    background-color: blue;
-}
-.header h2 {
-    color: red;
-}
-@media screen and (min-width: 50em) {
-    .header {
-        background-color: darken($blue, 20%);
+.menu-trigger {
+    display: block;
+    position: absolute;
+    top: 1.7em;
+    right: 1.5em;
+    width: 1.875em;
+    margin: 0;
+    @include bp(54) {
+        display: none;
     }
-}*/
+    &:before,
+    &:after {
+        background-color: rgba(0, 113, 206, 0.9);
+        content: '';
+        display: block;
+        height: 4px;
+        transition: all 200ms ease-in-out;
+        border-radius: 0.15em;
+    }
+    &:before {
+        box-shadow: 0 8px 0 rgba(0, 113, 206, 0.9);
+        margin-bottom: 12px;
+    }
+    &.active {
+        &:before {
+          box-shadow: 0 0 0 $blue;
+          transform: translateY(8px) rotate(45deg);
+        }
+        &:after{
+          transform: translateY(-8px) rotate(-45deg);
+        }
+    }
+    &:focus {
+        outline-color: transparent;
+    }
+    svg {
+        font-size: 2em;
+        transition: color 250ms ease-in-out;
+        &:hover {
+            color: darken($blue, 10%);
+        }
+    }
+}
+nav {
+    &.main {
+        display: block;
+        position: absolute;
+        top: 4.65em;
+        left: 70em;
+        right: -70em;
+        text-align: center;
+        transition: left 500ms ease-in-out,
+                    right 500ms ease-in-out;
+        z-index: 4;
+        @include bp(54) {
+            position: relative;
+            top: auto;
+            left: auto;
+            right: auto;
+            background-color: #fff;
+            float: right;
+            padding-top: 0.65em;
+        }
+        a {
+            position: relative;
+            display: block;
+            color: $blue;
+            font-weight: 500;
+            text-decoration: none;
+            font-size: 1em;
+            color: #fff;
+            padding: 0.65em 0;
+            float: left;
+            width: 50%;
+            margin: 0;
+            background-color: rgba(40, 40, 40, 0.9);
+            &:first-of-type {
+                background-color: rgba(0, 113, 206, 0.9);
+                border-right: 0.05em solid #fff;
+            }
+            @include bp(54) {
+                font-size: 1.15em;
+                display: inline-block;
+                float: none;
+                width: auto;
+                padding: 0;
+                margin: 0 1.5em;
+                color: $blue;
+                background-color: transparent;
+                &:first-of-type {
+                    background-color: transparent;
+                    border-right: none;
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    left: 50%;
+                    height: 0.1em;
+                    width: 0;
+                    background-color: $blue;
+                    transition: 250ms color ease-in-out,
+                                250ms width ease-in-out,
+                                250ms left ease-in-out;
+                }
+                &:hover {
+                    color: darken($blue, 10%);
+                    &:after {
+                        width: 100%;
+                        left: 0;
+                    }
+                    &:last-of-type {
+                        color: $black;
+                        &:after {
+                            background-color: $black;
+                        }
+                    }
+                }
+            }
+        }
+        &.services {
+            a {
+                @include bp(54) {
+                    color: $black;
+                    &:after {
+                        background-color: $black;
+                    }
+                }
+            }
+        }
+        &.active {
+            position: absolute;
+            left: 0;
+            right: 0;
+            a {
+                background-color: rgba(40, 40, 40, 0.9);
+                &:first-of-type {
+                    background-color: rgba(0, 113, 206, 0.9);
+                    border-right: 0.05em solid #fff;
+                }
+            }
+        }
+        .current-nav-item {
+            @include bp(54) {
+                color: darken($blue, 10%);
+                &:after {
+                    width: 100%;
+                    left: 0;
+                }
+            }
+        }
+    }
+}

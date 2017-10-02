@@ -1,40 +1,45 @@
 .site {
 	width: 100%;
-	max-width: 120em;
+	max-width: 100em;
 	margin: 0 auto;
 	//box-shadow:	0 2px 4px rgba(0,0,0,0.2);
 }
 .wrap {
 	width: 90%;
-	max-width: 60em;
+	max-width: 78em;
 	margin: 0 auto;
-	@include bp(62.5) {
+	@include bp(80) {
 		width: 100%;
 	}
 }
 .sm-wrap {
 	position: relative;
 	width: 90%;
-	max-width: 45em;
+	max-width: 44em;
 	margin: 0 auto;
-	@include bp(50) {
+	@include bp(54) {
 		width: 100%;
 	}
 }
-
 .half {
 	margin-bottom: 1em;
-	@include bp(44) {
+	@include bp(54) {
 		float: left;
-		width: 49%;
+		width: 48%;
 		margin-bottom: 0;
 		&.first {
-			margin-right: 2%;
+			margin-right: 4%;
+		}
+	}
+	&.full {
+		@include bp(54) {
+			margin: 0;
+			width: 50%;
 		}
 	}
 }
 .two-third {
-	@include bp(44) {
+	@include bp(54) {
 		float: left;
 		width: 65%;
 		&.first {
@@ -43,12 +48,24 @@
 	}
 }
 .third {
-	@include bp(44) {
+	@include bp(54) {
 		float: left;
 		width: 30%;
 		&.first {
 			margin-right: 5%;
 		}
+	}
+}
+.sixty {
+	@include bp(54) {
+		float: left;
+		width: 60%;
+	}
+}
+.forty {
+	@include bp(54) {
+		float: left;
+		width: 40%;
 	}
 }
 .four-list {
@@ -63,7 +80,7 @@
 			margin: 0;
 		}
 	}
-	@include bp(50) {
+	@include bp(54) {
 		> li {
 			width: 24%;
 			margin: 0 1.333% 1em 0;
@@ -84,16 +101,13 @@
 		display: block;
 		margin-bottom: 1em;
 	}
-	@include bp(44) {
+	@include bp(54) {
 		> li {
 			float: left;
 			width: 31%;
 			margin: 0 2.5% 1em 0;
 			&:last-child, &:nth-child(3n) {
 				margin: 0 0 1em;
-			}
-			&:nth-child(4n) {
-				clear: left;
 			}
 		}
 	}
@@ -106,7 +120,7 @@
 		display: block;
 		margin-bottom: 1em;
 	}
-	@include bp(44) {
+	@include bp(54) {
 		> li {
 			float: left;
 			width: 45%;
@@ -131,7 +145,7 @@
 			margin: 0 0 1em;
 		}
 	}
-	@include bp(44) {
+	@include bp(54) {
 		li {
 			max-width: 30%;
 			margin: 0 5% 1em 0;

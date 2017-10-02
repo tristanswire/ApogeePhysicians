@@ -14,25 +14,21 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
-
-			<?php
-			while ( have_posts() ) : the_post();
-
-				get_template_part( 'template-parts/content', 'page' );
-
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-
-			endwhile; // End of the loop.
-			?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	<section class="hero services">
+		<div class="hero-container">
+			<div class="hero-content">
+				<h1><span>Top of the Curve in</span> Hospital Medicine</h1>
+				<p class="p-wrap">Apogee’s infrastructure is designed specifically with the best interests of you and your family in mind. Apogee is not merely a place of employment; it is a place to belong and call home.</p>
+				<div class="button-container">
+					<a href="#" class="btn black first">Careers</a>
+					<a href="#" class="btn outline-white">Services</a>
+				</div>
+			</div>
+		</div>
+		<div class="hero-quote black">
+			<p>“What's best for the <span>Patient</span> is best for the <span>Practice</span>.” <span class="tm">&trade;</span></p>
+		</div>
+</section>
 
 <?php
-get_sidebar();
 get_footer();
