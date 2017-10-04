@@ -11,28 +11,29 @@ footer {
   background:#191919;
   color:#9A9A9A;
   margin:0;
-    
+
     h4{
         color: #fff;
         font-weight: 500 !important;
-    }  
-  
+        
+    }
+
   .centered {
     max-width:1200px;
     margin:0 auto;
     display:flex;
     justify-content:space-between;
-    
+
     .footer-logo {
       width:20%;
-       
-      
+
+
       img.logo {
         padding:30px 20px 10px 0;
         max-width:100%;
       }
     }
-    
+
     .footer-navigation {
       width:60%;
       padding:15px 20px 10px 0;
@@ -42,22 +43,22 @@ footer {
         position: relative;
         float: left;
         margin: 0;
-        
+
         .footer-links {
           margin:0;
           padding:0;
           list-style:none;
           -webkit-transition: max-height .5s;
           transition: max-height .5s;
-            
+
             a{
                 color: #bbb;
                 &:hover{
                     color: #0065AF;
                 }
             }
-            
-            
+
+
         }
       }
     }
@@ -103,17 +104,17 @@ footer {
         width:100%;
         margin:0 auto;
       }
-      
+
       .footer-contact {
         width:100%;
       }
-      
+
       .footer-navigation {
-        
+
         .footer-links-holder {
           width:100%;
           padding:0;
-          
+
           h4 {
             margin:0;
             padding:10px 20px;
@@ -140,15 +141,15 @@ footer {
               transition: transform .5s;
             }
           }
-          
+
           .footer-links {
             max-height: 0;
             overflow: hidden;
             padding:0 20px;
           }
-          
+
           &.active {
-            
+
             h4 {
               &::after {
                 -moz-transform: rotate(-45deg);
@@ -157,7 +158,7 @@ footer {
                 transform: rotate(-45deg);
               }
             }
-            
+
             .footer-links {
               max-height: 10000px;
             }
@@ -179,13 +180,13 @@ footer {
     background: #fff;
     border-radius: 50%;
     vertical-align:middle;
-      
+
     &:hover {
       fill: #4085DE;
     }
     &.linkedin {
       padding:4px;
-     
+
     }
     svg {
       .face, .twit, .link {
@@ -209,7 +210,7 @@ footer {
     margin:10px 0;
   }
 
-  a { 
+  a {
     color:#fff;
     text-decoration:none;
     -webkit-transition: color .5s, background .5s;
@@ -243,4 +244,3 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-

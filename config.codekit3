@@ -57,6 +57,17 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/_images\/ap-logo-gray.png": {
+		"ft": 32768,
+		"iS": 3923,
+		"oA": 0,
+		"oAP": "\/_images\/ap-logo-gray.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/_images\/ap-logo-white.png": {
 		"ft": 32768,
 		"iS": 3974,
