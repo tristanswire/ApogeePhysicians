@@ -241,16 +241,16 @@
 		"uL": 1
 		},
 	"\/_scss\/base.scss": {
-		"aP": 1,
+		"aP": 0,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
-		"ma": 1,
+		"ma": 0,
 		"oA": 0,
-		"oAP": "\/style.css",
-		"oF": 2,
-		"oS": 3,
+		"oAP": "\/_scss\/base.css",
+		"oF": 0,
+		"oS": 0,
 		"uL": 1
 		},
 	"\/_scss\/careers.scss": {
@@ -781,20 +781,6 @@
 "hooks": [
 	],
 "manualImportLinks": {
-	"\/_js\/functions.js": [
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/_js\/library\/slick.min.js",
-			"position": 0,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/_js\/library\/aos.js",
-			"position": 1,
-			"type": 0
-			}
-		]
 	},
 "projectAttributes": {
 	"creationDate": 526945388,
