@@ -8,18 +8,15 @@
   letter-spacing: 0.025em;
 
     .slogan{
-      text-align: left;
       display: inline-block;
-      background: red;
     }
-    
 
 
     ul{
-        text-align: center;
+        // text-align: center;
         margin: 0;
         display: inline-block;
-
+        float: right;
 
         li{
             display: inline-block;

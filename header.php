@@ -30,7 +30,7 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site site-wrap">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'apogee-physicians' ); ?></a>
-	<div id="navbar">
+	<div id="navbar ">
 		<div class="slogan">
 			 What's best for the patient is best for the practice. ™
 		</div>
@@ -56,7 +56,7 @@
   </ul>
 </div>
 
-	<header class="header group">
+	<header class="header group ">
 		<!-- nav logo -->
 		<div class="header-logo">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">

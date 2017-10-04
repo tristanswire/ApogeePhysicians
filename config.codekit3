@@ -259,27 +259,17 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/_scss\/base.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/_scss\/base-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"\/_scss\/base.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/_scss\/base.css",
-		"oF": 0,
-		"oS": 0,
+		"oAP": "\/style.css",
+		"oF": 2,
+		"oS": 3,
 		"uL": 1
 		},
 	"\/_scss\/careers.scss": {
@@ -563,6 +553,12 @@
 		"oAP": "\/functions.php",
 		"oF": 0
 		},
+	"\/header.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/header.php",
+		"oF": 0
+		},
 	"\/inc\/custom-header.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -759,16 +755,6 @@
 		"oA": 2,
 		"oAP": "\/single.php",
 		"oF": 0
-		},
-	"\/style-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/style-min-min.css",
-		"oF": 0,
-		"oS": 3
 		},
 	"\/style.css": {
 		"aP": 1,
