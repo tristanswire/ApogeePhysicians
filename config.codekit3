@@ -68,20 +68,9 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/_images\/ap-logo-white.png": {
-		"ft": 32768,
-		"iS": 3974,
-		"oA": 0,
-		"oAP": "\/_images\/ap-logo-white.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"\/_images\/ap-logo.png": {
 		"ft": 32768,
-		"iS": 29386,
+		"iS": 53096,
 		"oA": 0,
 		"oAP": "\/_images\/ap-logo.png",
 		"oF": 0,
@@ -194,12 +183,42 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/_js\/library\/anime.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/_js\/library\/anime.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/_js\/library\/aos.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/_js\/library\/aos-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/_js\/library\/jquery.animateNumber.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/_js\/library\/jquery.animateNumber-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/_js\/library\/jquery.waypoints.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/_js\/library\/jquery.waypoints-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
