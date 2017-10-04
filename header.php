@@ -31,9 +31,9 @@
 <div id="page" class="site site-wrap">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'apogee-physicians' ); ?></a>
 	<div id="navbar">
-		<!-- <div class="slogan">
+		<div class="slogan">
 			What's best for the patient is best for the practice. ™
-		</div> -->
+		</div>
   <ul>
     <li>Apogee Family Login</li>
     <li>Patient Portal</li>
