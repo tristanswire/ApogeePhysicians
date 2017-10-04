@@ -259,6 +259,16 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/_scss\/base.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/_scss\/base-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/_scss\/base.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -551,12 +561,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/functions.php",
-		"oF": 0
-		},
-	"\/header.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/header.php",
 		"oF": 0
 		},
 	"\/inc\/custom-header.php": {

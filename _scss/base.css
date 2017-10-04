@@ -1843,7 +1843,8 @@ img {
   letter-spacing: 0.025em; }
   #navbar .slogan {
     text-align: left;
-    display: inline-block; }
+    display: inline-block;
+    background: red; }
   #navbar ul {
     text-align: center;
     margin: 0;
