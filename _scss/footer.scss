@@ -1,32 +1,28 @@
-//.site-copyright {
-//    text-align: center;
-//    background-color: $black;
-//    color: #fff;
-//    padding: 1em 0;
-//}
-
-
-
 footer {
   background:#191919;
   color:#9A9A9A;
   margin:0;
 
+
     h4{
         color: #fff;
         font-weight: 500 !important;
-        
     }
 
-  .centered {
-    max-width:1200px;
+  .footer-content {
+    max-width:1300px;
     margin:0 auto;
     display:flex;
     justify-content:space-between;
+    padding: 2em 0;
 
     .footer-logo {
       width:20%;
 
+      p{
+        font-size: 1em;
+
+      }
 
       img.logo {
         padding:30px 20px 10px 0;
@@ -51,31 +47,46 @@ footer {
           -webkit-transition: max-height .5s;
           transition: max-height .5s;
 
-            a{
-                color: #bbb;
-                &:hover{
-                    color: #0065AF;
-                }
-            }
+            li{
+              margin:5px 0;
 
+              &:first-child{
+                margin-top: 10px;
+              }
+
+              a{
+                  color: #bbb;
+                  font-size: .9em;
+                  &:hover{
+                      color: #0065AF;
+                  }
+              }
+
+            }
 
         }
       }
     }
   }
+
   .bottom-bar {
     position:relative;
     text-align:center;
-    font-size:.9em;
+    font-size:.5em;
     background:#000;
-    padding:15px 0;
+    padding:5px 0;
+
+    p{
+      font-size: 1.7em;
+
+    }
   }
 }
 
 /* Responsive Tablet Sizes */
 @media only screen and (max-width: 878px) {
   footer {
-    .centered {
+    .footer-content {
       flex-wrap:wrap;
       .footer-logo {
         text-align: center;
@@ -99,7 +110,7 @@ footer {
 /* Responsive Mobile Sizes */
 @media only screen and (max-width: 500px) {
   footer {
-    .centered {
+    .footer-content {
       .footer-logo {
         width:100%;
         margin:0 auto;

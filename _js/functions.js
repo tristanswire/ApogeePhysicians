@@ -1,3 +1,9 @@
+function footerCollapse() {
+  jQuery('.footer-links-holder h4').click(function () {
+    jQuery(this).parent().toggleClass('active');
+  });
+};
+
 function homeCarousel () {
     jQuery('.carousel').slick();
 }
@@ -49,6 +55,7 @@ function aosJS () {
 }
 
 jQuery(document).ready( function() {
+    footerCollapse();
     homeCarousel();
     colorChange();
     menuTrigger();

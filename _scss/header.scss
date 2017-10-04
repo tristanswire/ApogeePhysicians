@@ -1,3 +1,62 @@
+/* ========= Top Bar =========== */
+
+#navbar {
+  width: 100%;
+  color: #bbb;
+  background: #F8F8F8;
+  font-weight: bold;
+  letter-spacing: 0.025em;
+
+    // .slogan{
+    //   text-align: left;
+    //   display: inline-block;
+    // }
+
+    ul{
+        text-align: center;
+        margin: 0;
+
+        li{
+            display: inline-block;
+            padding: 0 1em 0 2em;
+            line-height: 3em;
+            font-size: .9em;
+        }
+
+       li:hover {
+          color: #007dc3;
+        }
+    }
+}
+
+/* Social Icons */
+.social-top {
+  a {
+    display:inline-block;
+    padding:7px;
+    width:35px;
+    height:35px;
+    margin:0 2px;
+    vertical-align:middle;
+    fill: #bbb;
+
+    &:hover {
+      fill: #4085DE;
+    }
+    &.linkedin {
+      padding:4px;
+
+    }
+    svg {
+      .face, .twit, .link {
+        fill: #000;
+      }
+    }
+  }
+}
+
+
+
 .header {
     position: relative;
     padding: 1em 2em;

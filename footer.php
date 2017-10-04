@@ -13,23 +13,19 @@
 
 	</div><!-- #content -->
 
-<!--	<footer id="colophon" class="site-footer">-->
 	<footer>
-  <div class="centered clearfix">
+  <div class="footer-content clearfix">
     <div class="footer-logo">
-      <img class="logo" src="img/ap-logo-gray.png">
+      <img class="logo" src="<?php bloginfo('template_directory'); ?>/_images/ap-logo-gray.png">
     <div>
         <p>15059 N. Scottsdale Road <br /> Suite 600
     <br />Scottsdale, AZ 85254
     </p>
-<!--
-       <p><a href="mailto:">info@apogeephysicians.com</a></p>
-       <p><a href="tel:">(602) 778-3601</a></p>  
--->
+
     </div>
 
     </div>
-  
+
     <div class="footer-navigation">
       <div class="footer-links-holder">
         <h4>Apogee</h4>
@@ -55,16 +51,16 @@
           <li><a href="">Apogee Store</a></li>
         </ul>
       </div>
-      
+
      <div class="footer-links-holder">
         <h4>Contact Us</h4>
         <ul class="footer-links">
           <li><a href="">FAQ</a></li>
           <li><a href="">Contact Us</a></li>
-          <li>      
-          
+          <li>
+
         <div class="social">
-       
+
         <a href="https://www.facebook.com/" class="facebook">
           <svg viewBox="0 0 33 33"><g><path d="M 17.996,32L 12,32 L 12,16 l-4,0 l0-5.514 l 4-0.002l-0.006-3.248C 11.993,2.737, 13.213,0, 18.512,0l 4.412,0 l0,5.515 l-2.757,0 c-2.063,0-2.163,0.77-2.163,2.209l-0.008,2.76l 4.959,0 l-0.585,5.514L 18,16L 17.996,32z"></path></g></svg>
         </a>
@@ -83,16 +79,11 @@
     <p>Apogee Physicians &copy; <?php echo date("Y"); ?></p>
   </div>
 </footer>
-<!--
-		<div class="site-copyright">
-			<p>Apogee Physicians &copy; <?php echo date("Y"); ?></p>
-		</div>
--->
+
 	<!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/_js/functions-min.js"></script>
 
