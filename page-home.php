@@ -19,9 +19,9 @@ get_header(); ?>
 			<div class="hero-content">
 				<h1 data-aos="fade-zoom-in" data-aos-easing="ease" data-aos-duration="1000"><span>Top of the Curve in</span> Hospital Medicine</h1>
 				<p class="p-wrap" data-aos="fade-zoom-in" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="750">Apogee’s infrastructure is designed specifically with the best interests of you and your family in mind. Apogee is not merely a place of employment; it is a place to belong and call home.</p>
-				<div class="button-container">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>careers" class="btn first orange" data-aos="fade-zoom-in" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="2250">Careers</a>
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>services" class="btn outline-white" data-aos="fade-zoom-in" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="2750">Services</a>
+				<div class="button-container" data-aos="fade-zoom-in" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="1500">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>careers" class="btn first orange">Careers</a>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>services" class="btn outline-white">Services</a>
 				</div>
 			</div>
 		</div>
@@ -58,14 +58,14 @@ get_header(); ?>
 				</ul>
 			</div>
 		</div>
-		<div class="grid-container">
-			<div class="wrap">
+		<div id="waypoint" class="grid-container">
+			<div class="wrap" style="max-width: 54em;">
 				<h2 class="blue">Apogee at a Glance</h2>
 				<p class="p-wrap">Apogee’s infrastructure is designed specifically with the best interests of you and your family in mind. Apogee is not merely a place of employment; it is a place to belong and call home. Apogee is not merely a place of employment; it is a place to belong and call home.</p>
 				<ul class="three-list group stats">
-					<li>
+					<li data-aos="fade-zoom-in" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="500">
 						<figure>
-							<svg width="440" height="440" viewBox="0 0 440 440">
+							<svg width="175" height="175" viewBox="0 0 440 440">
 								<defs>
 									<mask id="mask" x="0" y="0" width="100" height="100" >
 										<rect x="80" y="-140" rx="140" ry="140" width="280" height="500"/>
@@ -75,26 +75,73 @@ get_header(); ?>
 								<circle class="stat" cx="220" cy="220" r="180" transform="rotate(-90,220,220)"/>
 							</svg>
 							<figcaption>
-								<span>100</span>
+								<span id="animate_circle_one">0</span>
+								<h5>Physician - Owned</h5>
 							</figcaption>
-							<p>100%<span>Physician - Owned</span></p>
 						</figure>
-						<p>100%<span>Physician - Owned</span></p>
 					</li>
-					<li>
-						<p>146 FTES<span>Largest Customer</span></p>
+					<li data-aos="fade-zoom-in" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="1000">
+						<div id="counter_one">
+							<span>0</span><h5>Largest Customer</h5>
+						</div>
 					</li>
-					<li>
-						<p>65 FTES<span>Largest Program</span></p>
+					<li data-aos="fade-zoom-in" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="1500">
+						<div id="counter_two">
+							<span>0</span><h5>Largest Program</h5>
+						</div>
 					</li>
-					<li>
-						<p>90%<span>New Program Staffing</span></p>
+				<!-- </ul>
+				<ul class="three-list group stats-two"> -->
+					<li data-aos="fade-zoom-in" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="2000">
+						<figure>
+							<svg width="175" height="175" viewBox="0 0 440 440">
+								<defs>
+									<mask id="mask" x="0" y="0" width="100" height="100" >
+										<rect x="80" y="-140" rx="140" ry="140" width="280" height="500"/>
+									</mask>
+								</defs>
+								<circle cx="220" cy="220" r="180"/>
+								<circle class="stat-2" cx="220" cy="220" r="180" transform="rotate(-90,220,220)"/>
+							</svg>
+							<figcaption id="animate_circle_two">
+								<span>0</span>
+								<h5>New Program Staffing</h5>
+							</figcaption>
+						</figure>
 					</li>
-					<li>
-						<p>100%<span>Of Shifts Covered</span></p>
+					<li data-aos="fade-zoom-in" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="2250">
+						<figure>
+							<svg width="175" height="175" viewBox="0 0 440 440">
+								<defs>
+									<mask id="mask" x="0" y="0" width="100" height="100" >
+										<rect x="80" y="-140" rx="140" ry="140" width="280" height="500"/>
+									</mask>
+								</defs>
+								<circle cx="220" cy="220" r="180"/>
+								<circle class="stat-3" cx="220" cy="220" r="180" transform="rotate(-90,220,220)"/>
+							</svg>
+							<figcaption id="animate_circle_three">
+								<span>0</span>
+								<h5>Of Shifts Covered</h5>
+							</figcaption>
+						</figure>
 					</li>
-					<li>
-						<p>97%<span>Shifts Covered by Non-Locums</span></p>
+					<li data-aos="fade-zoom-in" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="3000">
+						<figure>
+							<svg width="175" height="175" viewBox="0 0 440 440">
+								<defs>
+									<mask id="mask" x="0" y="0" width="100" height="100" >
+										<rect x="80" y="-140" rx="140" ry="140" width="280" height="500"/>
+									</mask>
+								</defs>
+								<circle cx="220" cy="220" r="180"/>
+								<circle class="stat-4" cx="220" cy="220" r="180" transform="rotate(-90,220,220)"/>
+							</svg>
+							<figcaption id="animate_circle_four">
+								<span>0</span>
+								<h5>Shifts Covered by Non-Locums</h5>
+							</figcaption>
+						</figure>
 					</li>
 				</ul>
 				<div class="button-container">

@@ -247,31 +247,12 @@
 }
 .grid-container {
     text-align: center;
-    padding: 4em 0;
+    padding: 6em 0;
+    h2 {
+        margin-top: 0;
+    }
     p {
         padding-bottom: 2em;
-    }
-}
-.stats {
-    li {
-        display: block;
-        background-color: $blue;
-        color: #fff;
-        font-weight: 700;
-        padding: 2em;
-    }
-    p {
-        font-size: 3em;
-        font-weight: 700;
-        margin: 0;
-        line-height: 1;
-    }
-    span {
-        display: block;
-        font-weight: normal;
-        text-transform: uppercase;
-        font-size: 1rem;
-        letter-spacing: 1px;
     }
 }
 .grid {
