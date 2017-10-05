@@ -9,10 +9,11 @@
     }
     &.home {
         background-color: darken($gray-alt, 20%);
+        background-image: url(_images/home-hero-img.jpg);
+        background-position: 0;
+        max-height: 80vh;
         @include bp(54) {
-            background-image: url(_images/home-hero-img.jpg);
             background-position: 60%;
-            max-height: 80vh;
         }
         .hero-quote {
             background-color: $blue;
@@ -24,8 +25,10 @@
     }
     &.careers {
         background-color: darken($gray-alt, 20%);
+        padding-bottom: 2em;
         @include bp(54) {
             background-image: url(_images/careers-hero-img.jpg);
+            padding-bottom: 0;
             &:after {
                 content: '';
                 background-color: rgba(25, 25, 25, 0.35);
@@ -83,7 +86,7 @@
     margin: 0 auto;
     color: #fff;
     transition: background-color 300ms ease-in-out;
-    padding: 2em 0 4em;
+    padding: 3em 0 3em;
     z-index: 3;
     @include bp(54) {
         width: 100%;
@@ -99,7 +102,7 @@
     text-align: center;
     @include bp(54) {
         position: absolute;
-        top: 40%;
+        top: 45%;
         left: 0;
         transform: translate(5%, -45%);
         max-width: 34em;
@@ -107,9 +110,13 @@
     }
     @include bp(80) {
         transform: translate(30%, -45%);
+        max-width: 36em;
     }
     h1 {
-        margin-bottom: 0.5em;
+        margin: 0 auto 0.5em;
+        @include bp(54) {
+            margin-bottom: 0.25em;
+        }
     }
     span {
         display: block;
@@ -118,8 +125,14 @@
         text-transform: uppercase;
     }
     p {
-        font-size: 1.15em;
+        font-size: 1.1em;
         padding-bottom: 2em;
+        @include bp(54) {
+            font-size: 1.15em;
+            max-width: 26em;
+            margin: 0;
+            padding-bottom: 1.5em;
+        }
     }
     .btn {
         display: block;
@@ -129,8 +142,10 @@
             display: inline-block;
             width: auto;
             margin: 0 auto;
+        }
+        @include bp(54) {
             &.first {
-                margin-right: 2em;
+                margin-right: 1em;
             }
         }
     }
@@ -153,16 +168,27 @@
     p {
         position: relative;
         font-style: italic;
-        margin: 0;
+        margin: 0 auto;
         font-weight: 400;
+        max-width: 24em;
+        font-size: 0.9em;
+        @include bp(44) {
+            font-size: 1.1rem;
+        }
     }
     span {
         font-weight: 700;
     }
 }
 .tm {
-    font-size: 2rem;
-    line-height: 0;
+    font-size: 1.5rem;
+    position: absolute;
+    right: -0.25em;
+    top: 0;
+    @include bp(44) {
+        font-size: 2rem;
+        right: -0.25em;
+    }
 }
 .career-container {
     padding: 4em 0;
@@ -172,6 +198,12 @@
     }
     h2 {
         margin: 2em auto 0.5em;
+        @include bp(44) {
+            margin-top: 0em;
+        }
+        @include bp(62.5) {
+            margin-top: 2em;
+        }
     }
     p {
         padding-bottom: 2em;
@@ -205,44 +237,71 @@
     .left-container {
         width: 90%;
         margin: 0 auto;
-    	@include bp(62.5) {
+    	@include bp(54) {
     		float: left;
-    		width: 65%;
+    		width: 60%;
     	}
         @include bp(80) {
-            width: 67.5%;
+            width: 65%;
+        }
+        @include bp(100) {
+            width: 70%;
         }
     }
     .right-container {
-    	@include bp(62.5) {
+    	@include bp(54) {
     		float: left;
-    		width: 35%;
+    		width: 40%;
     	}
         @include bp(80) {
-            width: 32.5%;
+            width: 35%;
+        }
+        @include bp(100) {
+            width: 30%;
         }
     }
 }
 .services-content {
     padding: 4em 0;
+    @include bp(54) {
+        padding: 2em 2em 0;
+    }
     @include bp(62.5) {
-        padding: 4em 0;
+        padding: 4em 2em;
         margin: 0 auto;
-        max-width: 44em;
+        max-width: 54em;
     }
     @include bp(80) {
-        padding-top: 6em;
+        padding-top: 6.5em;
+    }
+    @include bp(100) {
+        padding-top: 8em;
+    }
+    h2,
+    p {
+        text-align: center;
+        @include bp(54) {
+            text-align: left;
+        }
     }
     h2 {
-        margin: 0 0 0.35em;
+        margin: 0 0 0.5em;
     }
     p {
-        padding-bottom: 2em;
+        padding-bottom: 1em;
+        @include bp(62.5) {
+            max-width: 36em;
+            margin: 0;
+            padding-bottom: 2em;
+        }
     }
-    a {
+    a.btn {
         display: block;
         margin: 0 auto;
         width: 14em;
+        @include bp(54) {
+            margin: 0;
+        }
     }
 }
 .grid-container {
@@ -290,6 +349,13 @@
         .carousel-content {
             border-color: #fff;
             background-color: $gray-back;
+        }
+    }
+    &.white {
+        background-color: #fff;
+        .carousel-content {
+            border-color: $gray-alt;
+            background-color: $gray-alt;
         }
     }
 }

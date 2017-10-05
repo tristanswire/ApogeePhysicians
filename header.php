@@ -17,12 +17,12 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" type="image/x-icon">
 	<!-- Typekit Font Scripts -->
 	<script src="https://use.typekit.net/jze2xpr.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" type="image/x-icon">
 	<?php wp_head(); ?>
 </head>
 

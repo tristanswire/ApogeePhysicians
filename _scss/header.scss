@@ -6,13 +6,16 @@
     @include bp(54) {
         float: left;
     }
-    img {
+    a {
         display: block;
         max-width: 10em;
-        width: 100%;
         @include bp(54) {
-            max-width: 14em;
+            max-width: 12em;
         }
+    }
+    img {
+        display: block;
+        width: 100%;
     }
 }
 .menu-trigger {
@@ -62,21 +65,24 @@ nav {
     &.main {
         display: block;
         position: absolute;
-        top: 4.65em;
-        left: 70em;
-        right: -70em;
+        top: 4.25em;
+        right: 70em;
+        left: -70em;
+        height: 50em;
         text-align: center;
         transition: left 500ms ease-in-out,
                     right 500ms ease-in-out;
         z-index: 4;
+        background-color: rgba(255, 255, 255, 0.95);
         @include bp(54) {
             position: relative;
             top: auto;
             left: auto;
             right: auto;
+            height: auto;
             background-color: #fff;
             float: right;
-            padding-top: 0.875em;
+            padding-top: 0.7em;
         }
         a {
             position: relative;
@@ -86,14 +92,7 @@ nav {
             text-decoration: none;
             font-size: 1em;
             padding: 0.65em 0;
-            float: left;
-            width: 50%;
             margin: 0;
-            background-color: rgba(40, 40, 40, 0.9);
-            &:first-of-type {
-                background-color: rgba(0, 113, 206, 0.9);
-                border-right: 0.05em solid #fff;
-            }
             @include bp(54) {
                 font-size: 1.15em;
                 display: inline-block;
@@ -101,11 +100,6 @@ nav {
                 width: auto;
                 padding: 0;
                 margin: 0 1.5em;
-                background-color: transparent;
-                &:first-of-type {
-                    background-color: transparent;
-                    border-right: none;
-                }
                 &:after {
                     content: '';
                     position: absolute;
@@ -125,12 +119,6 @@ nav {
                         width: 100%;
                         left: 0;
                     }
-                    &:last-of-type {
-                        color: $black;
-                        &:after {
-                            background-color: $black;
-                        }
-                    }
                 }
             }
         }
@@ -146,14 +134,10 @@ nav {
         }
         &.active {
             position: absolute;
+            right: 25%;
             left: 0;
-            right: 0;
-            a {
-                background-color: rgba(40, 40, 40, 0.9);
-                &:first-of-type {
-                    background-color: rgba(0, 113, 206, 0.9);
-                    border-right: 0.05em solid #fff;
-                }
+            @include bp(44) {
+                right: 50%;
             }
         }
         .current-nav-item {

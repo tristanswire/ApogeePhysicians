@@ -14,10 +14,13 @@
 }
 .wrap {
 	width: 90%;
-	max-width: 60em;
+	max-width: 62.5em;
 	margin: 0 auto;
 	@include bp(62.5) {
 		width: 100%;
+	}
+	@include bp(100) {
+		max-width: 74em;
 	}
 }
 .sm-wrap {
@@ -65,13 +68,13 @@
 	}
 }
 .sixty {
-	@include bp(54) {
+	@include bp(62.5) {
 		float: left;
 		width: 60%;
 	}
 }
 .forty {
-	@include bp(54) {
+	@include bp(62.5) {
 		float: left;
 		width: 40%;
 	}

@@ -17,9 +17,9 @@ get_header(); ?>
 	<section class="hero home">
 		<div class="hero-container">
 			<div class="hero-content">
-				<h1 data-aos="fade-zoom-in" data-aos-easing="ease" data-aos-duration="1000"><span>Top of the Curve in</span> Hospital Medicine</h1>
-				<p class="p-wrap" data-aos="fade-zoom-in" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="750">Apogee’s infrastructure is designed specifically with the best interests of you and your family in mind. Apogee is not merely a place of employment; it is a place to belong and call home.</p>
-				<div class="button-container" data-aos="fade-zoom-in" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="1500">
+				<h1 data-aos="fade-down" data-aos-easing="ease" data-aos-duration="1000"><span>Top of the Curve in</span> Hospital Medicine</h1>
+				<p class="p-wrap" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="750">Apogee’s infrastructure is designed specifically with the best interests of you and your family in mind. Apogee is not merely a place of employment; it is a place to belong and call home.</p>
+				<div class="button-container" data-aos="flip-up" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="1500">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>careers" class="btn first orange">Careers</a>
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>services" class="btn outline-white">Services</a>
 				</div>
@@ -30,38 +30,40 @@ get_header(); ?>
 		</div>
 	</section>
 	<section class="main-content">
-		<div class="career-container wrap group">
-			<div class="half first">
+		<div class="career-container lg-wrap group">
+			<div class="half first" data-aos="fade-down" data-aos-easing="ease" data-aos-duration="1000">
 				<a href="#">
 					<img src="<?php bloginfo('template_directory'); ?>/_images/career-map.png" alt="..."/>
 				</a>
 			</div>
-			<div class="half">
+			<div class="half" data-aos="fade-down" data-aos-easing="ease" data-aos-duration="500" data-aos-delay="750">
 				<h2 class="blue">Work with Apogee</h2>
 				<p class="p-wrap">Apogee’s infrastructure is designed specifically with the best interests of you and your family in mind. Apogee is not merely a place of employment; it is a place to belong and call home. Apogee is not merely a place of employment; it is a place to belong and call home.</p>
 				<a href="#" class="btn orange">Join Now</a>
 			</div>
 		</div>
 		<div class="services-container group">
-			<div class="left-container first">
+			<div class="left-container first" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="500">
 				<div class="services-content">
 					<h2>We Provide the Best Services</h2>
 					<p class="p-wrap">Apogee’s infrastructure is designed specifically with the best interests of you and your family in mind. Apogee is not merely a place of employment; it is a place to belong and call home. Apogee is not merely a place of employment; it is a place to belong and call home.  it is a place to belong and call home. Apogee is not merely a place of employment; it is a place to belong and call home.</p>
 					<a href="#" class="btn orange">View Our Services</a>
 				</div>
 			</div>
-			<div class="right-container">
+			<div class="right-container" data-aos="fade-left" data-aos-easing="ease" data-aos-duration="500" data-aos-delay="750">
 				<ul class="carousel">
-					<li><img src="http://placehold.it/500x600" alt="..." /></li>
-					<li><img src="http://placehold.it/500x600" alt="..." /></li>
-					<li><img src="http://placehold.it/500x600" alt="..." /></li>
+					<li><img src="http://placehold.it/500x500" alt="..." /></li>
+					<li><img src="http://placehold.it/500x500" alt="..." /></li>
+					<li><img src="http://placehold.it/500x500" alt="..." /></li>
 				</ul>
 			</div>
 		</div>
 		<div id="waypoint" class="grid-container">
 			<div class="wrap" style="max-width: 54em;">
-				<h2 class="blue">Apogee at a Glance</h2>
-				<p class="p-wrap">Apogee’s infrastructure is designed specifically with the best interests of you and your family in mind. Apogee is not merely a place of employment; it is a place to belong and call home. Apogee is not merely a place of employment; it is a place to belong and call home.</p>
+				<div data-aos="fade-down" data-aos-easing="ease" data-aos-duration="500" data-aos-delay="750">
+					<h2 class="blue">Apogee at a Glance</h2>
+					<p class="p-wrap">Apogee’s infrastructure is designed specifically with the best interests of you and your family in mind. Apogee is not merely a place of employment; it is a place to belong and call home. Apogee is not merely a place of employment; it is a place to belong and call home.</p>
+				</div>
 				<ul class="three-list group stats">
 					<li data-aos="fade-zoom-in" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="500">
 						<figure>
@@ -90,8 +92,6 @@ get_header(); ?>
 							<span>0</span><h5>Largest Program</h5>
 						</div>
 					</li>
-				<!-- </ul>
-				<ul class="three-list group stats-two"> -->
 					<li data-aos="fade-zoom-in" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="2000">
 						<figure>
 							<svg width="175" height="175" viewBox="0 0 440 440">
@@ -144,9 +144,9 @@ get_header(); ?>
 						</figure>
 					</li>
 				</ul>
-				<div class="button-container">
-					<a href="#" class="btn first orange">View Our Careers</a>
-					<a href="#" class="btn outline-orange">View Our Services</a>
+				<div class="button-container" data-aos-easing="ease" data-aos-duration="500">
+					<a href="#" class="btn first orange" data-aos="flip-up">View Our Careers</a>
+					<a href="#" class="btn outline-orange" data-aos="flip-up">View Our Services</a>
 				</div>
 			</div>
 		</div>

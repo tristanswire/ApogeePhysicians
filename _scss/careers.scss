@@ -9,15 +9,10 @@
         color: $blue;
     }
     h2 {
-        margin-top: 0;
+        margin: 0 auto 0.35em;
     }
-    > p {
+    p.p-wrap {
         padding-bottom: 4em;
-    }
-    .icon {
-        font-size: 3.5em;
-        color: transparent;
-        stroke: $blue;
     }
     li {
         &:last-child {
@@ -36,65 +31,162 @@
             }
         }
     }
+    .icon {
+        font-size: 2.25em;
+        color: transparent;
+        stroke: $blue;
+        @include bp(54) {
+            font-size: 2.75em;
+        }
+    }
 }
 .side-by-side {
-    padding: 3em 0;
+    padding: 2em 0;
     text-align: center;
+    position: relative;
     @include bp(54) {
-        padding: 4em 0 0;
         text-align: left;
     }
+    @include bp(62.5) {
+        padding: 6em 0;
+    }
     h2 {
-        margin-top: 0;
+        margin: 0 auto 0.5em;
     }
     img {
         display: none;
         margin: 0 auto;
         @include bp(54) {
             display: block;
-            margin-right: 0;
+            margin: -6em auto 0;
+            max-width: 26em;
+            position: absolute;
+            bottom: 0;
+            right: 2em;
         }
-    }
-    p {
-        @include bp(54) {
-            padding-bottom: 1em;
+        @include bp(62.5) {
+            max-width: 32em;
+            right: 2.5%;
+        }
+        @include bp(80) {
+            max-width: none;
+            right: 10%;
         }
     }
     .content {
+        p {
+            padding-bottom: 1.5em;
+            font-size: 1.1rem;
+            max-width: 36em;
+            @include bp(62.5) {
+                font-size: 1.15rem;
+            }
+        }
+    }
+}
+.button-container {
+    .btn {
+        display: block;
+        margin: 0 auto 0.5em;
+        width: 90%;
+        max-width: 16em;
         @include bp(54) {
-            padding-top: 4em;
+            margin: 0 0 0.5em;
+            max-width: 12em;
+        }
+        @include bp(62.5) {
+            max-width: none;
+            width: auto;
+            display: inline-block;
+            padding: 0.65em 2.5em;
+        }
+    }
+    .outline-white {
+        &:hover {
+            color: $orange;
+        }
+    }
+    a:first-of-type {
+        @include bp(62.5) {
+            margin-right: 1em;
         }
     }
 }
 .visa {
-    padding: 2em 0;
-    @include bp(54) {
-        padding: 4em 0 0;
+    padding: 3em 0 0;
+    @include bp(44) {
+        padding-bottom: 3em;
     }
-    h2,
-    p {
+    @include bp(62.5) {
+        padding: 5em 0 0;
+    }
+    .intro {
         text-align: center;
-    }
-    p {
-        padding-bottom: 1em;
-        @include bp(54) {
-            padding-bottom: 4em;
+        h2 {
+            padding: 0 0 0.5em;
+            margin: 0;
+            text-align: center;
+        }
+        p {
+            padding-bottom: 2em;
+            @include bp(62.5) {
+                padding-bottom: 4em;
+            }
         }
     }
-    img {
-        display: none;
-        margin: -2em auto 0;
-        @include bp(54) {
-            display: block;
+    .forty {
+        img {
+            display: none;
+            margin: -2em auto 0;
+            @include bp(62.5) {
+                display: block;
+            }
         }
+    }
+}
+.container-top {
+    padding-bottom: 1em;
+    @include bp(44) {
+        padding-bottom: 0;
+        float: left;
+        width: 60%;
+        margin-right: 5%;
+    }
+    @include bp(62.5) {
+        float: none;
+        width: auto;
     }
     ul {
-        padding-bottom: 1em;
+        padding-left:1em;
+    }
+    a {
+        font-size: 0.875em;
     }
 }
 .container-bottom {
+    text-align: center;
+    padding-bottom: 2em;
+    @include bp(44) {
+        text-align: left;
+        padding-bottom: 0;
+        float: left;
+        width: 35%;
+    }
+    @include bp(62.5) {
+        float: none;
+        width: auto;
+        div {
+            float: left;
+            width: 40%;
+            margin: 0;
+            padding-top: 0.65em;
+        }
+    }
+    div {
+        position: relative;
+    }
     h4 {
-        margin-top: 0.25em;
+        margin: 0.25em 0;
         font-weight: 600;
         color: $blue;
     }
@@ -108,6 +200,10 @@
     a {
         display: block;
         padding-bottom: 0.35em;
+        font-size: 0.875em;
+        @include bp(62.5) {
+            font-size: 1em;
+        }
         &:hover {
             color: $orange;
             svg {
@@ -119,6 +215,59 @@
         transition: color 250ms ease;
         margin-right: 0.35em;
         vertical-align: middle;
+        display: none;
+        @include bp(54) {
+            display: inline-block;
+        }
+    }
+    .left {
+        @include bp(44) {
+            float: left;
+            width: 60%;
+        }
+        img {
+            border-radius: 50%;
+            max-width: 4em;
+            margin: 0;
+            @include bp(44) {
+                float: left;
+            }
+        }
+        h4 {
+            padding: 0.75em 0 0 1em;
+            @include bp(44) {
+                float: left;
+            }
+        }
+    }
+    .right {
+        @include bp(44) {
+            float: left;
+            width: 40%;
+            padding-top: 0.75em;
+        }
+    }
+    .headshot {
+        @include bp(62.5) {
+            float: left;
+            width: 60%;
+            padding-top: 0;
+        }
+        img {
+            border-radius: 50%;
+            max-width: 4em;
+            width: 100%;
+            @include bp(62.5) {
+                float: left;
+            }
+        }
+        h4 {
+            @include bp(62.5) {
+                float: left;
+                padding-top: 0.65em;
+                padding-left: 1em;
+            }
+        }
     }
 }
 .container-background {
