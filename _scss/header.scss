@@ -1,3 +1,127 @@
+/* ========= Top Bar =========== */
+
+#navbar {
+  width: 100%;
+  color: #bbb;
+  background: #F8F8F8;
+  // background: #0E3860;
+  // color: #efefef;
+  font-weight: bold;
+  letter-spacing: 0.025em;
+
+
+    .slogan{
+      display: inline-block;
+      padding: .9em 2em;
+      font-weight: 700;
+    }
+
+    ul{
+        // text-align: center;
+        margin: 0;
+        display: inline-block;
+        float: right;
+        padding-right: 2em;
+        
+        li{
+            display: inline-block;
+            padding: 0 1em 0 2em;
+            line-height: 3em;
+            font-size: .9em;
+        }
+
+       li:hover {
+          // color: #fff;
+          color: #007dc3;
+        }
+    }
+}
+
+/* Social Icons */
+.social-top {
+  line-height: 24px;
+
+  a {
+    display:inline-block;
+    padding:7px;
+    width:35px;
+    height:35px;
+    margin:0 ;
+    vertical-align:middle;
+    fill: #d6d6d6;
+
+    &:hover {
+      fill: #007dc3;
+    }
+    &.linkedin {
+      padding:2px;
+      padding-bottom:8px;
+
+    }
+    svg {
+      .face, .twit, .link {
+        fill: #000;
+      }
+    }
+  }
+}
+
+// Tablet Size
+@media only screen and (max-width: 1026px) {
+
+  #navbar{
+    text-align: center;
+
+    .slogan{
+      display: block;
+      padding-bottom: 0.5em;
+
+    }
+
+    ul{
+      display: block;
+      float: none;
+      padding-bottom: 1em;
+    }
+  }
+  .social-top{
+    display: block;
+  }
+}
+
+// Mobile Size
+@media only screen and (max-width: 568px) {
+  #navbar{
+    text-align: center;
+
+    .slogan{
+      display: block;
+      padding-bottom: 0.8em;
+    }
+
+    ul{
+      display: block;
+      float: none;
+      padding-bottom: 1em;
+      // text-align: left;
+
+      >li{
+        display: block;
+        padding-left: 0;
+        line-height: 2em;
+      }
+    }
+  }
+  // .social-top{
+  //   display: block;
+  // }
+}
+
+
+/* ========= Top Bar =========== */
+
+
+
 .header {
     position: relative;
     padding: 1em 2em;

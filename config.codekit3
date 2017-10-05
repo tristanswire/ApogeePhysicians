@@ -63,6 +63,17 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/_images\/ap-logo-gray.png": {
+		"ft": 32768,
+		"iS": 3923,
+		"oA": 0,
+		"oAP": "\/_images\/ap-logo-gray.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/_images\/ap-logo.png": {
 		"ft": 32768,
 		"iS": 53096,
@@ -272,8 +283,8 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/_scss\/base.css",
-		"oF": 0,
+		"oAP": "\/style.css",
+		"oF": 2,
 		"oS": 0,
 		"uL": 1
 		},
