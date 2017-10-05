@@ -15,6 +15,12 @@
 		"oAP": "\/.gitattributes",
 		"oF": 0
 		},
+	"\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.gitignore",
+		"oF": 0
+		},
 	"\/404.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -122,12 +128,12 @@
 		},
 	"\/_images\/jacqueline-gallina.jpg": {
 		"ft": 16384,
-		"iS": 65556,
+		"iS": 66539,
 		"oA": 0,
 		"oAP": "\/_images\/jacqueline-gallina.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/_images\/physician-2.png": {
@@ -178,7 +184,7 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/_js\/functions-min.js",
-		"oF": 1,
+		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
@@ -259,16 +265,16 @@
 		"uL": 1
 		},
 	"\/_scss\/base.scss": {
-		"aP": 1,
+		"aP": 0,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
-		"ma": 1,
+		"ma": 0,
 		"oA": 0,
-		"oAP": "\/style.css",
-		"oF": 2,
-		"oS": 3,
+		"oAP": "\/_scss\/base.css",
+		"oF": 0,
+		"oS": 0,
 		"uL": 1
 		},
 	"\/_scss\/careers.scss": {
@@ -799,38 +805,6 @@
 "hooks": [
 	],
 "manualImportLinks": {
-	"\/_js\/functions.js": [
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/_js\/library\/slick.min.js",
-			"position": 0,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/_js\/library\/aos.js",
-			"position": 1,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/_js\/library\/anime.min.js",
-			"position": 2,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/_js\/library\/jquery.waypoints.js",
-			"position": 3,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/_js\/library\/jquery.animateNumber.js",
-			"position": 4,
-			"type": 0
-			}
-		]
 	},
 "projectAttributes": {
 	"creationDate": 526945388,
