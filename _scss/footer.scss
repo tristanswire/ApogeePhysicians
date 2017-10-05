@@ -84,7 +84,7 @@ footer {
 }
 
 /* Responsive Tablet Sizes */
-@media only screen and (max-width: 878px) {
+@media only screen and (max-width: 903px) {
   footer {
     .footer-content {
       flex-wrap:wrap;
@@ -101,6 +101,10 @@ footer {
         width:100%;
         .footer-links-holder {
           padding:0 20px;
+
+          .social a{
+            margin-bottom: 10px;
+          }
         }
       }
     }
@@ -108,7 +112,7 @@ footer {
 }
 
 /* Responsive Mobile Sizes */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 585px) {
   footer {
     .footer-content {
       .footer-logo {
@@ -255,4 +259,3 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
