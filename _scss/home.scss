@@ -17,10 +17,6 @@
         }
         .hero-quote {
             background-color: $blue;
-            opacity: 0;
-            &.testing {
-                opacity: 1;
-            }
         }
     }
     &.careers {

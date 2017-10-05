@@ -2068,10 +2068,7 @@ nav.main {
       .hero.home {
         background-position: 60%; } }
     .hero.home .hero-quote {
-      background-color: #0071CE;
-      opacity: 0; }
-      .hero.home .hero-quote.testing {
-        opacity: 1; }
+      background-color: #0071CE; }
   .hero.careers {
     background-color: #b4b4b4;
     padding-bottom: 2em; }
