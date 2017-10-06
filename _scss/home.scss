@@ -303,6 +303,8 @@
 .grid-container {
     text-align: center;
     padding: 6em 0;
+    opacity: 0;
+    transition: opacity 500ms ease-in;
     h2 {
         margin-top: 0;
     }
@@ -310,22 +312,23 @@
         padding-bottom: 2em;
     }
 }
-.grid {
-    padding-bottom: 2em;
-    @include bp(54) {
-        padding-bottom: 4em;
-    }
-    li {
-        float: left;
-        width: 33.333%;
-        margin: 0;
-        &:last-child, &:nth-child(3n) {
-            margin: 0;
-        }
-    }
-    img {
-        display: block;
-    }
+.grid-one,
+.grid-two,
+.grid-three,
+.grid-four,
+.grid-five,
+.grid-six {
+    opacity: 0;
+}
+.grid-two {
+    transition-delay: 500ms
+}
+.grid-three {
+    transition-delay: 1000ms
+}
+.fade-in {
+    opacity: 1;
+    transition: opacity 500ms ease-in-out;
 }
 .testimonial-container {
     text-align: center;

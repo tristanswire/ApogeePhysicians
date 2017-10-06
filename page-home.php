@@ -18,39 +18,39 @@ get_header(); ?>
 		<div class="hero-container">
 			<div class="hero-content">
 				<h1 data-aos="fade-down" data-aos-easing="ease" data-aos-duration="1000"><span>Top of the Curve in</span> Hospital Medicine</h1>
-				<p class="p-wrap" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="750">Apogee’s infrastructure is designed specifically with the best interests of you and your family in mind. Apogee is not merely a place of employment; it is a place to belong and call home.</p>
-				<div class="button-container" data-aos="flip-up" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="1500">
+				<p class="p-wrap" data-aos="fade-down" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="500">Apogee’s infrastructure is designed specifically with the best interests of you and your family in mind. Apogee is not merely a place of employment; it is a place to belong and call home.</p>
+				<div class="button-container" data-aos="flip-up" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="1000">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>careers" class="btn first orange">Careers</a>
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>services" class="btn outline-white">Services</a>
 				</div>
 			</div>
 		</div>
-		<div class="hero-quote quote-wow">
-			<p>“What's best for the <span>Patient</span> is best for the <span>Practice</span>.” <span class="tm">&trade;</span></p>
+		<div class="hero-quote">
+			<p>“What's best for the <span>Patient</span> is best for the <span>Practice</span>.”   ™</p>
 		</div>
 	</section>
 	<section class="main-content">
 		<div class="career-container lg-wrap group">
-			<div class="half first" data-aos="fade-down" data-aos-easing="ease" data-aos-duration="1000">
+			<div class="half first" data-aos="fade-down" data-aos-duration="500">
 				<a href="#">
 					<img src="<?php bloginfo('template_directory'); ?>/_images/career-map.png" alt="..."/>
 				</a>
 			</div>
-			<div class="half" data-aos="fade-down" data-aos-easing="ease" data-aos-duration="500" data-aos-delay="750">
+			<div class="half">
 				<h2 class="blue">Work with Apogee</h2>
 				<p class="p-wrap">Apogee’s infrastructure is designed specifically with the best interests of you and your family in mind. Apogee is not merely a place of employment; it is a place to belong and call home. Apogee is not merely a place of employment; it is a place to belong and call home.</p>
 				<a href="#" class="btn orange">Join Now</a>
 			</div>
 		</div>
 		<div class="services-container group">
-			<div class="left-container first" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="500">
+			<div class="left-container first">
 				<div class="services-content">
 					<h2>We Provide the Best Services</h2>
 					<p class="p-wrap">Apogee’s infrastructure is designed specifically with the best interests of you and your family in mind. Apogee is not merely a place of employment; it is a place to belong and call home. Apogee is not merely a place of employment; it is a place to belong and call home.  it is a place to belong and call home. Apogee is not merely a place of employment; it is a place to belong and call home.</p>
 					<a href="#" class="btn orange">View Our Services</a>
 				</div>
 			</div>
-			<div class="right-container" data-aos="fade-left" data-aos-easing="ease" data-aos-duration="500" data-aos-delay="750">
+			<div class="right-container">
 				<ul class="carousel">
 					<li><img src="http://placehold.it/500x500" alt="..." /></li>
 					<li><img src="http://placehold.it/500x500" alt="..." /></li>
@@ -60,12 +60,12 @@ get_header(); ?>
 		</div>
 		<div id="waypoint" class="grid-container">
 			<div class="wrap" style="max-width: 54em;">
-				<div data-aos="fade-down" data-aos-easing="ease" data-aos-duration="500" data-aos-delay="750">
+				<div>
 					<h2 class="blue">Apogee at a Glance</h2>
 					<p class="p-wrap">Apogee’s infrastructure is designed specifically with the best interests of you and your family in mind. Apogee is not merely a place of employment; it is a place to belong and call home. Apogee is not merely a place of employment; it is a place to belong and call home.</p>
 				</div>
 				<ul class="three-list group stats">
-					<li data-aos="fade-zoom-in" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="500">
+					<li class="grid-one">
 						<figure>
 							<svg width="175" height="175" viewBox="0 0 440 440">
 								<defs>
@@ -77,22 +77,22 @@ get_header(); ?>
 								<circle class="stat" cx="220" cy="220" r="180" transform="rotate(-90,220,220)"/>
 							</svg>
 							<figcaption>
-								<span id="animate_circle_one">0</span>
+								<span id="counter_one">100</span>
 								<h5>Physician - Owned</h5>
 							</figcaption>
 						</figure>
 					</li>
-					<li data-aos="fade-zoom-in" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="1000">
-						<div id="counter_one">
-							<span>0</span><h5>Largest Customer</h5>
-						</div>
-					</li>
-					<li data-aos="fade-zoom-in" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="1500">
+					<li class="grid-two">
 						<div id="counter_two">
-							<span>0</span><h5>Largest Program</h5>
+							<span>146</span><h5>Largest Customer</h5>
 						</div>
 					</li>
-					<li data-aos="fade-zoom-in" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="2000">
+					<li class="grid-three">
+						<div id="counter_three">
+							<span>65</span><h5>Largest Program</h5>
+						</div>
+					</li>
+					<li class="grid-four">
 						<figure>
 							<svg width="175" height="175" viewBox="0 0 440 440">
 								<defs>
@@ -109,7 +109,7 @@ get_header(); ?>
 							</figcaption>
 						</figure>
 					</li>
-					<li data-aos="fade-zoom-in" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="2250">
+					<li class="grid-five">
 						<figure>
 							<svg width="175" height="175" viewBox="0 0 440 440">
 								<defs>
@@ -126,7 +126,7 @@ get_header(); ?>
 							</figcaption>
 						</figure>
 					</li>
-					<li data-aos="fade-zoom-in" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="3000">
+					<li class="grid-six">
 						<figure>
 							<svg width="175" height="175" viewBox="0 0 440 440">
 								<defs>

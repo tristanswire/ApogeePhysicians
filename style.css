@@ -1791,24 +1791,24 @@ img {
     text-transform: uppercase;
     font-size: 2em;
     letter-spacing: 1px; }
-  .stats #counter_one,
   .stats #counter_two,
-  .stats-two #counter_one,
-  .stats-two #counter_two {
+  .stats #counter_three,
+  .stats-two #counter_two,
+  .stats-two #counter_three {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%; }
-    .stats #counter_one span,
     .stats #counter_two span,
-    .stats-two #counter_one span,
-    .stats-two #counter_two span {
+    .stats #counter_three span,
+    .stats-two #counter_two span,
+    .stats-two #counter_three span {
       transition: font-size 2000ms ease-in-out; }
-      .stats #counter_one span:after,
       .stats #counter_two span:after,
-      .stats-two #counter_one span:after,
-      .stats-two #counter_two span:after {
+      .stats #counter_three span:after,
+      .stats-two #counter_two span:after,
+      .stats-two #counter_three span:after {
         content: 'FTEs';
         font-size: 1rem; }
   .stats svg,
@@ -1828,7 +1828,7 @@ img {
       .stats-two figure figcaption span {
         width: 90%;
         position: absolute;
-        top: 41%;
+        top: 39%;
         left: 50%;
         transform: translate(-50%, -50%); }
         .stats figure figcaption span:after,
@@ -1843,7 +1843,8 @@ img {
   stroke: currentColor;
   fill: currentColor;
   vertical-align: middle;
-  margin-top: -0.1em; }
+  margin-top: -0.1em;
+  transition: color 250ms ease-in-out; }
 
 .icon-heart {
   width: 1.146484375em; }
@@ -1854,79 +1855,64 @@ img {
 .icon-briefcase {
   width: 1.1181640625em; }
 
-/* ========= Top Bar =========== */
-#navbar {
-  width: 100%;
-  color: #bbb;
-  background: #F8F8F8;
-  font-weight: bold;
-  letter-spacing: 0.025em; }
-  #navbar .slogan {
-    display: inline-block;
-    padding: .9em 2em;
-    font-weight: 700; }
-  #navbar ul {
-    margin: 0;
-    display: inline-block;
-    float: right;
-    padding-right: 2em; }
-    #navbar ul li {
-      display: inline-block;
-      padding: 0 1em 0 2em;
-      line-height: 3em;
-      font-size: .9em; }
-    #navbar ul li:hover {
-      color: #007dc3; }
-
-/* Social Icons */
-.social-top {
-  line-height: 24px; }
-  .social-top a {
-    display: inline-block;
-    padding: 7px;
-    width: 35px;
-    height: 35px;
-    margin: 0;
-    vertical-align: middle;
-    fill: #d6d6d6; }
-    .social-top a:hover {
-      fill: #007dc3; }
-    .social-top a.linkedin {
-      padding: 2px;
-      padding-bottom: 8px; }
-    .social-top a svg .face, .social-top a svg .twit, .social-top a svg .link {
-      fill: #000; }
-
-@media only screen and (max-width: 1026px) {
-  #navbar {
-    text-align: center; }
-    #navbar .slogan {
-      display: block;
-      padding-bottom: 0.5em; }
-    #navbar ul {
-      display: block;
-      float: none;
-      padding-bottom: 1em; }
-  .social-top {
-    display: block; } }
-
-@media only screen and (max-width: 568px) {
-  #navbar {
-    text-align: center; }
-    #navbar .slogan {
-      display: block;
-      padding-bottom: 0.8em; }
-    #navbar ul {
-      display: block;
-      float: none;
-      padding-bottom: 1em; }
-      #navbar ul > li {
-        display: block;
-        padding-left: 0;
-        line-height: 2em; } }
-
-/* ========= Top Bar =========== */
+/* ========= Header Container =========== */
 .header {
+  position: relative;
+  padding: 0; }
+
+/* ========= Login Container =========== */
+#login_bar {
+  width: 100%;
+  background: #f3f3f3;
+  font-weight: bold;
+  letter-spacing: 0.025em;
+  padding: 0.75em 2em;
+  text-align: center; }
+  #login_bar p {
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    font-size: 0.85em;
+    color: #0071CE;
+    text-align: center; }
+    @media (min-width: 30em) {
+      #login_bar p {
+        font-size: 1em; } }
+    @media (min-width: 54em) {
+      #login_bar p {
+        color: #959CA1;
+        text-align: left;
+        float: left; } }
+  #login_bar > div {
+    margin: 0;
+    display: none;
+    float: right; }
+    @media (min-width: 54em) {
+      #login_bar > div {
+        display: block;
+        float: right;
+        margin: 0; } }
+    #login_bar > div > a {
+      color: #959CA1;
+      font-weight: normal;
+      font-size: 0.875em;
+      margin: 0 1em; }
+  #login_bar a:hover {
+    color: #0071CE; }
+
+.social-top {
+  display: inline-block;
+  padding-left: 0.5em; }
+  .social-top .icon {
+    display: inline-block;
+    color: #bbb;
+    margin: 0 0.5em; }
+    .social-top .icon:hover {
+      color: #0071CE; }
+
+/* ========= Nav Container =========== */
+.nav-bar {
   position: relative;
   padding: 1em 2em; }
 
@@ -2313,25 +2299,31 @@ nav.main {
 
 .grid-container {
   text-align: center;
-  padding: 6em 0; }
+  padding: 6em 0;
+  opacity: 0;
+  transition: opacity 500ms ease-in; }
   .grid-container h2 {
     margin-top: 0; }
   .grid-container p {
     padding-bottom: 2em; }
 
-.grid {
-  padding-bottom: 2em; }
-  @media (min-width: 54em) {
-    .grid {
-      padding-bottom: 4em; } }
-  .grid li {
-    float: left;
-    width: 33.333%;
-    margin: 0; }
-    .grid li:last-child, .grid li:nth-child(3n) {
-      margin: 0; }
-  .grid img {
-    display: block; }
+.grid-one,
+.grid-two,
+.grid-three,
+.grid-four,
+.grid-five,
+.grid-six {
+  opacity: 0; }
+
+.grid-two {
+  transition-delay: 500ms; }
+
+.grid-three {
+  transition-delay: 1000ms; }
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out; }
 
 .testimonial-container {
   text-align: center;

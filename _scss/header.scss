@@ -1,128 +1,78 @@
-/* ========= Top Bar =========== */
-
-#navbar {
-  width: 100%;
-  color: #bbb;
-  background: #F8F8F8;
-  // background: #0E3860;
-  // color: #efefef;
-  font-weight: bold;
-  letter-spacing: 0.025em;
-
-
-    .slogan{
-      display: inline-block;
-      padding: .9em 2em;
-      font-weight: 700;
-    }
-
-    ul{
-        // text-align: center;
-        margin: 0;
-        display: inline-block;
-        float: right;
-        padding-right: 2em;
-        
-        li{
-            display: inline-block;
-            padding: 0 1em 0 2em;
-            line-height: 3em;
-            font-size: .9em;
-        }
-
-       li:hover {
-          // color: #fff;
-          color: #007dc3;
-        }
-    }
-}
-
-/* Social Icons */
-.social-top {
-  line-height: 24px;
-
-  a {
-    display:inline-block;
-    padding:7px;
-    width:35px;
-    height:35px;
-    margin:0 ;
-    vertical-align:middle;
-    fill: #d6d6d6;
-
-    &:hover {
-      fill: #007dc3;
-    }
-    &.linkedin {
-      padding:2px;
-      padding-bottom:8px;
-
-    }
-    svg {
-      .face, .twit, .link {
-        fill: #000;
-      }
-    }
-  }
-}
-
-// Tablet Size
-@media only screen and (max-width: 1026px) {
-
-  #navbar{
-    text-align: center;
-
-    .slogan{
-      display: block;
-      padding-bottom: 0.5em;
-
-    }
-
-    ul{
-      display: block;
-      float: none;
-      padding-bottom: 1em;
-    }
-  }
-  .social-top{
-    display: block;
-  }
-}
-
-// Mobile Size
-@media only screen and (max-width: 568px) {
-  #navbar{
-    text-align: center;
-
-    .slogan{
-      display: block;
-      padding-bottom: 0.8em;
-    }
-
-    ul{
-      display: block;
-      float: none;
-      padding-bottom: 1em;
-      // text-align: left;
-
-      >li{
-        display: block;
-        padding-left: 0;
-        line-height: 2em;
-      }
-    }
-  }
-  // .social-top{
-  //   display: block;
-  // }
-}
-
-
-/* ========= Top Bar =========== */
-
-
+/* ========= Header Container =========== */
 
 .header {
+    position: relative;
+    padding: 0;
+}
+
+/* ========= Login Container =========== */
+
+#login_bar {
+    width: 100%;
+    background: darken($gray-back,2.5%);
+    font-weight: bold;
+    letter-spacing: 0.025em;
+    padding: 0.75em 2em;
+    text-align: center;
+    @include bp(50) {
+        text-align: left;
+    }
+    p {
+        display: block;
+        padding: 0;
+        margin: 0;
+        font-weight: 600;
+        font-size: 0.85em;
+        color: $blue;
+        text-align: center;
+        @include bp(30) {
+            font-size: 1em;
+        }
+        @include bp(54) {
+            color: $gray;
+            text-align: left;
+            float: left;
+        }
+    }
+    > div {
+        margin: 0;
+        display: none;
+        float: right;
+        @include bp(54) {
+            display: block;
+            float: right;
+            margin: 0;
+        }
+        > a {
+            color: $gray;
+            font-weight: normal;
+            font-size: 0.875em;
+            margin: 0 1em;
+        }
+    }
+    a {
+        &:hover {
+            color: $blue;
+        }
+    }
+}
+
+.social-top {
+    display: inline-block;
+    padding-left: 0.5em;
+    .icon {
+        display: inline-block;
+        color: #bbb;
+        margin: 0 0.5em;
+        &:hover {
+            color: $blue;
+        }
+    }
+}
+
+/* ========= Nav Container =========== */
+
+.nav-bar {
     position: relative;
     padding: 1em 2em;
 }

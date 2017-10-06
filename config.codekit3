@@ -229,6 +229,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/_js\/library\/jquery.initialize.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/_js\/library\/jquery.initialize-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/_js\/library\/jquery.waypoints.js": {
 		"ft": 64,
 		"ma": 0,
@@ -501,10 +511,22 @@
 		"oAP": "\/_svg\/icon-email.php",
 		"oF": 0
 		},
+	"\/_svg\/icon-facebook.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_svg\/icon-facebook.php",
+		"oF": 0
+		},
 	"\/_svg\/icon-heart.php": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/_svg\/icon-heart.php",
+		"oF": 0
+		},
+	"\/_svg\/icon-linkedin.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_svg\/icon-linkedin.php",
 		"oF": 0
 		},
 	"\/_svg\/icon-menu.php": {
@@ -529,6 +551,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/_svg\/icon-plus-box.php",
+		"oF": 0
+		},
+	"\/_svg\/icon-twitter.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_svg\/icon-twitter.php",
 		"oF": 0
 		},
 	"\/ajax-loader.gif": {
@@ -816,6 +844,44 @@
 "hooks": [
 	],
 "manualImportLinks": {
+	"\/_js\/functions.js": [
+		{
+			"followForSyntaxChecking": 0,
+			"linkedFileAbbreviatedPath": "\/_js\/library\/anime.min.js",
+			"position": 0,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/_js\/library\/jquery.waypoints.js",
+			"position": 1,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/_js\/library\/jquery.initialize.js",
+			"position": 2,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/_js\/library\/slick.min.js",
+			"position": 3,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/_js\/library\/aos.js",
+			"position": 4,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/_js\/library\/jquery.animateNumber.js",
+			"position": 5,
+			"type": 0
+			}
+		]
 	},
 "projectAttributes": {
 	"creationDate": 526945388,
