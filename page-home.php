@@ -103,8 +103,8 @@ get_header(); ?>
 								<circle cx="220" cy="220" r="180"/>
 								<circle class="stat-2" cx="220" cy="220" r="180" transform="rotate(-90,220,220)"/>
 							</svg>
-							<figcaption id="animate_circle_two">
-								<span>0</span>
+							<figcaption>
+								<span id="counter_four">90</span>
 								<h5>New Program Staffing</h5>
 							</figcaption>
 						</figure>
@@ -120,8 +120,8 @@ get_header(); ?>
 								<circle cx="220" cy="220" r="180"/>
 								<circle class="stat-3" cx="220" cy="220" r="180" transform="rotate(-90,220,220)"/>
 							</svg>
-							<figcaption id="animate_circle_three">
-								<span>0</span>
+							<figcaption>
+								<span id="counter_five">100</span>
 								<h5>Of Shifts Covered</h5>
 							</figcaption>
 						</figure>
@@ -137,8 +137,8 @@ get_header(); ?>
 								<circle cx="220" cy="220" r="180"/>
 								<circle class="stat-4" cx="220" cy="220" r="180" transform="rotate(-90,220,220)"/>
 							</svg>
-							<figcaption id="animate_circle_four">
-								<span>0</span>
+							<figcaption>
+								<span id="counter_six">97</span>
 								<h5>Shifts Covered by Non-Locums</h5>
 							</figcaption>
 						</figure>

@@ -37,17 +37,17 @@ function gridShow () {
         }
     }, { offset: '75%' });
 
-    jQuery('.grid-one, .grid-two, .grid-three').waypoint(function(direction) {
+    jQuery('.grid-one, .grid-two, .grid-three, .grid-four, .grid-five, .grid-six').waypoint(function(direction) {
         if (direction === 'down') {
-            jQuery('.grid-one, .grid-two, .grid-three').addClass('fade-in');
+            jQuery('.grid-one, .grid-two, .grid-three, .grid-four, .grid-five, .grid-six').addClass('fade-in');
         }
     }, { offset: '70%' });
 
-    jQuery('.grid-four, .grid-five, .grid-six').waypoint(function(direction) {
+    /*jQuery('.grid-four, .grid-five, .grid-six').waypoint(function(direction) {
         if (direction === 'down') {
             jQuery('.grid-four, .grid-five, .grid-six').addClass('fade-in');
         }
-    }, { offset: '60%' });
+    }, { offset: '60%' });*/
 }
 
 function numberAnimation () {
@@ -66,7 +66,7 @@ function numberAnimation () {
     }
     function gridTwo(){
         $('#counter_two span').each(function () {
-            $(this).prop('Counter',0).animate({
+            $(this).prop('Counter',0).delay(800).animate({
                 Counter: $(this).text()
             }, {
                 duration: 3000,
@@ -79,7 +79,46 @@ function numberAnimation () {
     }
     function gridThree(){
         $('#counter_three span').each(function () {
-            $(this).prop('Counter',0).animate({
+            $(this).prop('Counter',0).delay(1600).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 3000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+    }
+    function gridFour(){
+        $('#counter_four').each(function () {
+            $(this).prop('Counter',0).delay(2400).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 3000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+    }
+    function gridFive(){
+        $('#counter_five').each(function () {
+            $(this).prop('Counter',0).delay(2400).delay(1200).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 3000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+    }
+    function gridSix(){
+        $('#counter_six').each(function () {
+            $(this).prop('Counter',0).delay(3000).delay(1600).animate({
                 Counter: $(this).text()
             }, {
                 duration: 3000,
@@ -98,6 +137,15 @@ function numberAnimation () {
     });
     jQuery.initialize(".grid-three.fade-in", function() {
     	gridThree();
+    });
+    jQuery.initialize(".grid-four.fade-in", function() {
+    	gridFour();
+    });
+    jQuery.initialize(".grid-five.fade-in", function() {
+    	gridFive();
+    });
+    jQuery.initialize(".grid-six.fade-in", function() {
+    	gridSix();
     });
 }
 

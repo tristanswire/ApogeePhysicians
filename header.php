@@ -34,7 +34,7 @@
 		<!-- Apogee Login Bar -->
 		<div id="login_bar" class="group">
 			<p>What's best for the patient is best for the practice. ™</p>
-			<div>
+			<div class="full-bar">
 				<a href="#">Apogee Family Login</a>
 				<a href="#">Patient Portal</a>
 				<div class="social-top">
@@ -73,6 +73,21 @@
 
 					echo strip_tags(wp_nav_menu( $siteNavigation ), '<a>' );
 				?>
+				<div class="mobile-nav">
+					<a href="#">Apogee Family Login</a>
+					<a href="#">Patient Portal</a>
+					<div class="social-top">
+						<a href="https://www.facebook.com/" class="facebook">
+							<?php include('_svg/icon-facebook.php'); ?>
+						</a>
+						<a href="https://twitter.com/" class="twitter">
+							<?php include('_svg/icon-twitter.php'); ?>
+						</a>
+						<a href="https://www.linkedin.com/" class="linkedin">
+							<?php include('_svg/icon-linkedin.php'); ?>
+						</a>
+					</div>
+				</div>
 			</nav><!-- #site-navigation -->
 		</div>
 	</header><!-- #masthead -->

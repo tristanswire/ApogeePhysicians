@@ -82,7 +82,7 @@
     margin: 0 auto;
     color: #fff;
     transition: background-color 300ms ease-in-out;
-    padding: 3em 0 3em;
+    padding: 3em 0 5em;
     z-index: 3;
     @include bp(54) {
         width: 100%;
@@ -329,6 +329,21 @@
 .fade-in {
     opacity: 1;
     transition: opacity 500ms ease-in-out;
+    &.grid-two {
+        transition-delay: 1s;
+    }
+    &.grid-three {
+        transition-delay: 2s;
+    }
+    &.grid-four {
+        transition-delay: 3s;
+    }
+    &.grid-five {
+        transition-delay: 4s;
+    }
+    &.grid-six {
+        transition-delay: 5s;
+    }
 }
 .testimonial-container {
     text-align: center;

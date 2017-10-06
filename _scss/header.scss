@@ -34,26 +34,30 @@
             float: left;
         }
     }
-    > div {
-        margin: 0;
+    .full-bar {
         display: none;
-        float: right;
         @include bp(54) {
             display: block;
-            float: right;
-            margin: 0;
-        }
-        > a {
-            color: $gray;
-            font-weight: normal;
-            font-size: 0.875em;
-            margin: 0 1em;
         }
     }
-    a {
-        &:hover {
-            color: $blue;
-        }
+}
+
+.full-bar {
+    margin: 0;
+    float: right;
+    @include bp(54) {
+        display: none;
+    }
+    > a {
+        color: $gray;
+        font-weight: normal;
+        font-size: 0.875em;
+        margin: 0 1em;
+    }
+}
+a {
+    &:hover {
+        color: $blue;
     }
 }
 
@@ -95,7 +99,7 @@
 .menu-trigger {
     display: block;
     position: absolute;
-    top: 1.7em;
+    top: 1.5em;
     right: 1.5em;
     width: 1.875em;
     margin: 0;
@@ -142,12 +146,13 @@ nav {
         top: 4.25em;
         right: 70em;
         left: -70em;
-        height: 50em;
+        height: 100em;
         text-align: center;
         transition: left 500ms ease-in-out,
                     right 500ms ease-in-out;
         z-index: 4;
-        background-color: rgba(255, 255, 255, 0.95);
+        background-color: #fff;
+        padding: 1.25em 0;
         @include bp(54) {
             position: relative;
             top: auto;
@@ -164,7 +169,7 @@ nav {
             color: $blue;
             font-weight: 500;
             text-decoration: none;
-            font-size: 1em;
+            font-size: 1.5em;
             padding: 0.65em 0;
             margin: 0;
             @include bp(54) {
@@ -208,7 +213,7 @@ nav {
         }
         &.active {
             position: absolute;
-            right: 25%;
+            right: 0;
             left: 0;
             @include bp(44) {
                 right: 50%;
@@ -221,6 +226,26 @@ nav {
                     width: 100%;
                     left: 0;
                 }
+            }
+        }
+    }
+}
+.mobile-nav {
+    @include bp(54) {
+        display: none;
+    }
+    .social-top {
+        padding: 0.75em 0 0;
+        a {
+            display: inline-block;
+        }
+        .icon {
+            display: inline-block;
+            color: $blue;
+            font-size: 1.25em;
+            margin: 0 0.75em;
+            &:hover {
+                color: darken($blue, 10%);
             }
         }
     }
