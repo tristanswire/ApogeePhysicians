@@ -1,17 +1,110 @@
+.site-content {
+    position: relative;
+}
 .hero {
     position: relative;
     background-color: $blue;
     @include bp(54) {
-        transition: background 1s ease;
+        transition: all 1000ms ease;
         background-size: cover;
         background-position: top;
         background-repeat: no-repeat;
+        max-height: 80vh;
+        &.careers.home {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            transition: opacity 500ms ease-in-out;
+            .hero-quote {
+                background-color: $blue;
+            }
+            .btn {
+                background-color: transparent;
+                border-color: #fff;
+                color: #fff;
+            }
+            .outline-white {
+                background-color: $blue;
+                border-color: $blue;
+                color: #fff;
+            }
+            .hero-container {
+                background-color: rgba(25, 25, 25, 0.15);
+            }
+            .hero-content {
+                .btn {
+                    transition: background-color 500ms ease-in-out,
+                                border-color 500ms ease-in-out,
+                                color 500ms ease-in-out;
+                }
+            }
+            &.home {
+                background: url(_images/careers-hero-img.jpg) no-repeat center top;
+                background-size: cover;
+                background-position: 60%;
+                background-repeat: no-repeat;
+            }
+            &.active {
+                left: 0;
+                right: 0;
+                opacity: 1;
+                z-index: 4;
+            }
+        }
+        &.services.home {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            transition: opacity 500ms ease-in-out;
+            .hero-quote {
+                background-color: $black;
+            }
+            .btn {
+                background-color: transparent;
+                border-color: #fff;
+                color: #fff;
+            }
+            .outline-white {
+                background-color: $black;
+                border-color: $black;
+                color: #fff;
+            }
+            .hero-container {
+                background-color: rgba(25, 25, 25, 0.15);
+            }
+            .hero-content {
+                .btn {
+                    transition: background-color 500ms ease-in-out,
+                                border-color 500ms ease-in-out,
+                                color 500ms ease-in-out;
+                }
+            }
+            &.home {
+                background: url(_images/services-hero-img.jpg) no-repeat center top;
+                background-size: cover;
+                background-position: 60%;
+                background-repeat: no-repeat;
+            }
+            &.active {
+                left: 0;
+                right: 0;
+                opacity: 1;
+                z-index: 4;
+            }
+        }
+    }
+    @include bp(62.5) {
+        min-height: 32em;
+        max-height: 36em;
     }
     &.home {
         background-color: darken($gray-alt, 20%);
         background-image: url(_images/home-hero-img.jpg);
-        background-position: 0;
-        max-height: 80vh;
+        //background-position: 0;
         @include bp(54) {
             background-position: 60%;
         }
@@ -43,37 +136,6 @@
             background-image: url(_images/services-hero-img.jpg);
         }
     }
-    @include bp(54) {
-        &.active.home {
-            .hero-quote {
-                background-color: $black;
-            }
-            .btn {
-                background-color: transparent;
-                border-color: #fff;
-                color: #fff;
-            }
-            .outline-white {
-                background-color: $black;
-                border-color: $black;
-                color: #fff;
-            }
-            .hero-container {
-                background-color: rgba(25, 25, 25, 0.15);
-            }
-            .hero-content {
-                .btn {
-                    transition: background-color 500ms ease-in-out,
-                                border-color 500ms ease-in-out,
-                                color 500ms ease-in-out;
-                }
-            }
-            &.home {
-                background: url(_images/services-hero-img.jpg) no-repeat center top;
-                background-size: cover;
-            }
-        }
-    }
 }
 .hero-container {
     position: relative;
@@ -98,11 +160,14 @@
     text-align: center;
     @include bp(54) {
         position: absolute;
-        top: 45%;
+        top: 42.5%;
         left: 0;
         transform: translate(5%, -45%);
         max-width: 34em;
         text-align: left;
+    }
+    @include bp(62.5) {
+        top: 37.5%;
     }
     @include bp(80) {
         transform: translate(30%, -45%);
@@ -121,10 +186,9 @@
         text-transform: uppercase;
     }
     p {
-        font-size: 1.1em;
+        margin: 0 auto;
         padding-bottom: 2em;
         @include bp(54) {
-            font-size: 1.15em;
             max-width: 26em;
             margin: 0;
             padding-bottom: 1.5em;
@@ -167,10 +231,7 @@
         margin: 0 auto;
         font-weight: 400;
         max-width: 24em;
-        font-size: 0.9em;
-        @include bp(44) {
-            font-size: 1.1rem;
-        }
+        font-size: 0.875em;
     }
     span {
         font-weight: 700;
@@ -202,13 +263,29 @@
         }
     }
     p {
+        margin: 0 auto;
         padding-bottom: 2em;
+    }
+    img {
+        display: block;
+        width: 100%;
+        max-width: 32em;
+        margin: 0 auto;
     }
 }
 .services-container {
     background-color: $gray-back;
+    padding: 4em 0;
+    background-image: url(_images/greyzz.png);
     img {
+        display: block;
         width: 100%;
+        @include bp(54) {
+            padding-top: 2.5%;
+        }
+        @include bp(62.5) {
+            padding-top: 0;
+        }
     }
     .slick-prev {
         display: none !important;
@@ -230,49 +307,8 @@
             margin-right: -0.1em;
         }
     }
-    .left-container {
-        width: 90%;
-        margin: 0 auto;
-    	@include bp(54) {
-    		float: left;
-    		width: 60%;
-    	}
-        @include bp(80) {
-            width: 65%;
-        }
-        @include bp(100) {
-            width: 70%;
-        }
-    }
-    .right-container {
-    	@include bp(54) {
-    		float: left;
-    		width: 40%;
-    	}
-        @include bp(80) {
-            width: 35%;
-        }
-        @include bp(100) {
-            width: 30%;
-        }
-    }
 }
 .services-content {
-    padding: 4em 0;
-    @include bp(54) {
-        padding: 2em 2em 0;
-    }
-    @include bp(62.5) {
-        padding: 4em 2em;
-        margin: 0 auto;
-        max-width: 54em;
-    }
-    @include bp(80) {
-        padding-top: 6.5em;
-    }
-    @include bp(100) {
-        padding-top: 8em;
-    }
     h2,
     p {
         text-align: center;
@@ -284,8 +320,9 @@
         margin: 0 0 0.5em;
     }
     p {
+        margin: 0 auto;
         padding-bottom: 1em;
-        @include bp(62.5) {
+        @include bp(54) {
             max-width: 36em;
             margin: 0;
             padding-bottom: 2em;
@@ -293,7 +330,7 @@
     }
     a.btn {
         display: block;
-        margin: 0 auto;
+        margin: 0 auto 2em;
         width: 14em;
         @include bp(54) {
             margin: 0;
@@ -302,14 +339,16 @@
 }
 .grid-container {
     text-align: center;
-    padding: 6em 0;
+    padding: 3em 0;
     opacity: 0;
     transition: opacity 500ms ease-in;
     h2 {
         margin-top: 0;
     }
     p {
+        margin: 0 auto;
         padding-bottom: 2em;
+        max-width: 36em;
     }
 }
 .grid-one,
@@ -348,7 +387,8 @@
 .testimonial-container {
     text-align: center;
     background-color: $gray-back;
-    padding: 4em 0 8em;
+    padding: 2em 0 6em;
+    background-image: url(_images/geometry.png);
     h2 {
         color: $black;
         padding-bottom: 1em;

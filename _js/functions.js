@@ -9,9 +9,26 @@ function homeCarousel () {
 }
 
 function colorChange () {
-    jQuery('nav a:last-of-type').hover( function () {
-        jQuery('.hero').toggleClass('active');
+    /*jQuery('nav a:first-of-type').hover( function () {
+        if( jQuery(this).hasClass('active') ) {
+            jQuery(this).removeClass('active').delay(400).queue(function(next){
+                jQuery('.hero.careers').removeClass('active');
+                next();
+            });
+        } else {
+            jQuery(this).addClass('active');
+            jQuery('.hero.careers').addClass('active');
+        }
     });
+    jQuery('nav a:last-of-type').hover( function () {
+        if( jQuery(this).hasClass('active') ) {
+            jQuery(this).removeClass('active');
+            jQuery('.hero.services').removeClass('active');
+        } else {
+            jQuery(this).addClass('active');
+            jQuery('.hero.services').addClass('active');
+        }
+    });*/
 }
 
 function menuTrigger () {
@@ -42,12 +59,6 @@ function gridShow () {
             jQuery('.grid-one, .grid-two, .grid-three, .grid-four, .grid-five, .grid-six').addClass('fade-in');
         }
     }, { offset: '70%' });
-
-    /*jQuery('.grid-four, .grid-five, .grid-six').waypoint(function(direction) {
-        if (direction === 'down') {
-            jQuery('.grid-four, .grid-five, .grid-six').addClass('fade-in');
-        }
-    }, { offset: '60%' });*/
 }
 
 function numberAnimation () {
@@ -161,6 +172,13 @@ function aosJS () {
     AOS.init();
 }
 
+function bootstrapTabs () {
+    jQuery('.nav-tabs').click(function (e) {
+        e.preventDefault()
+        jQuery(this).tab('show')
+    })
+}
+
 jQuery(document).ready( function() {
     footerCollapse();
     homeCarousel();
@@ -171,6 +189,7 @@ jQuery(document).ready( function() {
     numberAnimation();
     dropdownList();
     aosJS();
+    bootstrapTabs();
 });
 /* END DOC READY */
 

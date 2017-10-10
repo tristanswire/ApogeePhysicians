@@ -82,10 +82,4 @@
         border-top: 2em solid $gray-back;
         border-left: 2em solid $gray-back;
     }
-    @include bp(62.5) {
-        max-width: 46em;
-    }
-    @include bp(80) {
-        max-width: none;
-    }
 }

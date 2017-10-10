@@ -1,5 +1,8 @@
 @mixin bp($point) {
 	@if $point == 100 {
+		@media (min-width: 120em) { @content; }
+	}
+	@if $point == 100 {
 		@media (min-width: 100em) { @content; }
 	}
 	@if $point == 80 {
@@ -15,7 +18,7 @@
 		@media (min-width: 44em) { @content; }
 	}
 	@else if $point == 30 {
-		@media (min-width: 30em) { @content; }
+		@media (min-width: 32em) { @content; }
 	}
 	@else if $point == 25 {
 		@media (min-width: 25em) { @content; }
@@ -33,9 +36,9 @@
 	color: $text-color;
 	font-family: "proxima-nova",sans-serif;
 	font-weight: 700;
-	font-size: 1.1em;
-	@include bp(80) {
-		font-size: 1.15em;
+	font-size: 0.875em;
+	@include bp(54) {
+		font-size: 0.925em;
 	}
 	&:hover {
 		border-color: darken($back-color, 10%);

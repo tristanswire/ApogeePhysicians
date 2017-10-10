@@ -127,6 +127,28 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/_images\/geometry.png": {
+		"ft": 32768,
+		"iS": 3354,
+		"oA": 0,
+		"oAP": "\/_images\/geometry.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/_images\/greyzz.png": {
+		"ft": 32768,
+		"iS": 6084,
+		"oA": 0,
+		"oAP": "\/_images\/greyzz.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/_images\/home-hero-img.jpg": {
 		"ft": 16384,
 		"iS": 248765,
@@ -145,6 +167,28 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/notebook.png": {
+		"ft": 32768,
+		"iS": 15079,
+		"oA": 0,
+		"oAP": "\/_images\/notebook.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/_images\/organic-tiles.png": {
+		"ft": 32768,
+		"iS": 27905,
+		"oA": 0,
+		"oAP": "\/_images\/organic-tiles.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/_images\/physician-2.png": {
@@ -199,22 +243,22 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/_js\/library\/anime.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/_js\/library\/anime.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"\/_js\/library\/aos.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/_js\/library\/aos-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/_js\/library\/bootstrap.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/_js\/library\/bootstrap-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -295,6 +339,19 @@
 		"oA": 0,
 		"oAP": "\/style.css",
 		"oF": 2,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/_scss\/bootstrap.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_scss\/bootstrap.css",
+		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
@@ -511,6 +568,12 @@
 		"oAP": "\/_svg\/icon-email.php",
 		"oF": 0
 		},
+	"\/_svg\/icon-facebook-circle.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_svg\/icon-facebook-circle.php",
+		"oF": 0
+		},
 	"\/_svg\/icon-facebook.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -521,6 +584,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/_svg\/icon-heart.php",
+		"oF": 0
+		},
+	"\/_svg\/icon-linkedin-circle.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_svg\/icon-linkedin-circle.php",
 		"oF": 0
 		},
 	"\/_svg\/icon-linkedin.php": {
@@ -551,6 +620,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/_svg\/icon-plus-box.php",
+		"oF": 0
+		},
+	"\/_svg\/icon-twitter-circle.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_svg\/icon-twitter-circle.php",
 		"oF": 0
 		},
 	"\/_svg\/icon-twitter.php": {
@@ -846,38 +921,38 @@
 "manualImportLinks": {
 	"\/_js\/functions.js": [
 		{
-			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/_js\/library\/anime.min.js",
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/_js\/library\/jquery.waypoints.js",
 			"position": 0,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/_js\/library\/jquery.waypoints.js",
+			"linkedFileAbbreviatedPath": "\/_js\/library\/jquery.initialize.js",
 			"position": 1,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/_js\/library\/jquery.initialize.js",
+			"linkedFileAbbreviatedPath": "\/_js\/library\/slick.min.js",
 			"position": 2,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/_js\/library\/slick.min.js",
+			"linkedFileAbbreviatedPath": "\/_js\/library\/aos.js",
 			"position": 3,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/_js\/library\/aos.js",
+			"linkedFileAbbreviatedPath": "\/_js\/library\/jquery.animateNumber.js",
 			"position": 4,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/_js\/library\/jquery.animateNumber.js",
+			"linkedFileAbbreviatedPath": "\/_js\/library\/bootstrap.js",
 			"position": 5,
 			"type": 0
 			}

@@ -17,13 +17,21 @@
 html,body {
 	//overflow-x: hidden;
 	-webkit-font-smoothing: antialiased;
-    
+	font-size: 16px;
+	@include bp(30) {
+		font-size: calc( 14px + 8 * ((100vw - 500px) / 1500));
+	}
+	@include bp(100) {
+		font-size: 20px;
+	}
 }
 
 body {
 	background-color: #e8e8e8;
 	color: $black;
 	font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
 }
 .site {
 	background-color: #fff;
@@ -34,30 +42,30 @@ h2 {
 	font-weight: 800;
 }
 h1 {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	@include bp(54) {
-		font-size: 3.75rem;
+		font-size: 3rem;
 	}
 	@include bp(80) {
-		font-size: 4rem;
+		font-size: 3.5rem;
 	}
 }
 h2 {
 	font-size: 1.75rem;
-	@include bp(54) {
+	/*@include bp(54) {
 		font-size: 2rem;
 	}
 	@include bp(80) {
-		font-size: 2.25rem;
-	}
+		font-size: 2.65rem;
+	}*/
 }
 
 h3 {
 	font-size: 1.15rem;
 	font-weight: 700;
-	@include bp(62.5) {
+	/*@include bp(62.5) {
 		font-size: 1.25rem;
-	}
+	}*/
 }
 
 h4 {
@@ -74,16 +82,6 @@ h1,h2,h3,h4,h5,h6 {
 	}
 }
 
-p,
-li {
-	font-weight: 400;
-	line-height: 135%;
-	font-size: 1rem;
-	@include bp(62.5) {
-		font-size: 1.15rem;
-	}
-}
-
 p {
 	&.white {
 		color: #fff;
@@ -93,16 +91,9 @@ p {
 	}
 	&.p-wrap {
 		max-width: 36em;
-		margin: 0 auto;
+		margin: 0;
 		@include bp(54) {
-			max-width: 44em;
-		}
-		&.intro {
-	        padding-bottom: 2em;
-	        @include bp(54) {
-	            padding-bottom: 3em;
-	            font-size: 1.15rem;
-	        }
+			max-width: 30em;
 		}
 	}
 }
@@ -214,6 +205,7 @@ img {
 
 @import "carousel-slick";
 @import "aos";
+@import "bootstrap";
 @import "animations";
 @import "icons";
 @import "header";

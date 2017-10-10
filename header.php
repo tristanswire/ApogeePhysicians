@@ -32,9 +32,9 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'apogee-physicians' ); ?></a>
 	<header class="header">
 		<!-- Apogee Login Bar -->
-		<div id="login_bar" class="group">
-			<p>What's best for the patient is best for the practice. ™</p>
-			<div class="full-bar">
+		<div class="login-bar group">
+			<!-- <p>What's best for the patient is best for the practice. ™</p> -->
+			<div class="full-width-container">
 				<a href="#">Apogee Family Login</a>
 				<a href="#">Patient Portal</a>
 				<div class="social-top">

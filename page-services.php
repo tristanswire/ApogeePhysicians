@@ -26,7 +26,7 @@ get_header(); ?>
 			</div>
 		</div>
 		<div class="hero-quote black">
-			<p>“What's best for the <span>Patient</span> is best for the <span>Practice</span>.” <span class="tm">&trade;</span></p>
+			<p>“What's best for the <span>Patient</span> is best for the <span>Practice</span>.”   ™</p>
 		</div>
 </section>
 

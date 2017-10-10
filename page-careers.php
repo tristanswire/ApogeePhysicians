@@ -25,7 +25,7 @@ get_header(); ?>
 			</div>
 		</div>
 		<div class="hero-quote">
-			<p>“What's best for the <span>Patient</span> is best for the <span>Practice</span>.” <span class="tm">&trade;</span></p>
+			<p>“What's best for the <span>Patient</span> is best for the <span>Practice</span>.”   ™</p>
 		</div>
 	</section>
 	<section class="career-tabs">
@@ -35,6 +35,27 @@ get_header(); ?>
 		<div class="half full" style="background-color: green;">
 
 		</div>
+	</section>
+	<section>
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab1default" data-toggle="tab">Default 1</a></li>
+            <li><a href="#tab2default" data-toggle="tab">Default 2</a></li>
+            <li><a href="#tab3default" data-toggle="tab">Default 3</a></li>
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#tab4default" data-toggle="tab">Default 4</a></li>
+                    <li><a href="#tab5default" data-toggle="tab">Default 5</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade in active" id="tab1default">Default 1</div>
+            <div class="tab-pane fade" id="tab2default">Default 2</div>
+            <div class="tab-pane fade" id="tab3default">Default 3</div>
+            <div class="tab-pane fade" id="tab4default">Default 4</div>
+            <div class="tab-pane fade" id="tab5default">Default 5</div>
+        </div>
 	</section>
 	<section class="list-container wrap">
 		<h2 class="blue">Join the Apogee Family</h2>
@@ -184,62 +205,8 @@ get_header(); ?>
 			</ul>
 		</div>
 	</section>
-	<section class="container">
-		<div class="wrap group">
-			<h2>The Apogee Difference</h2>
-			<ul class="top group">
-				<li>
-					<span>01</span>
-					<h3>Physician-Owned, Physician-Operated</h3>
-					<p>Apogee provides organizational stability and a supportive physician-led senior team. Our Hospitalists report directly to other physicians who have worked in hospitals and understand the practice of medicine. Additionally, our physicians are given the opportunity to network with some of the brightest leaders in Hospitalist medicine from programs across the country.</p>
-					<p>Additionally, our physicians are given the opportunity to network with some of the brightest leaders in Hospitalist medicine from programs across the country.</p>
-				</li>
-				<li>
-					<span>02</span>
-					<h3>Consistent Executive &amp; Physician Leadership</h3>
-					<ul class="inside">
-						<li><span></span>Patient-Centric Focus</li>
-						<li><span></span>Physician-Owned &amp; Operated</li>
-						<li><span></span>Family-Oriented Culture</li>
-					</ul>
-				</li>
-				<li>
-					<span>03</span>
-					<h3>Top Reasons Physicians Join Apogee</h3>
-					<ul class="inside">
-						<li><span></span>Patient-Centric Focus</li>
-						<li><span></span>Physician-Owned &amp; Operated</li>
-						<li><span></span>Family-Oriented Culture</li>
-					</ul>
-				</li>
-				<li>
-					<span>04</span>
-					<h3>Compensation &amp; Benefits</h3>
-					<p>Our compensation package ensures you are rewarded as a senior member from your first day with the group. Complete benefits package that includes medical, dental, vision, 401K, CME and Malpractice and tail coverage.</p>
-				</li>
-				<li>
-					<span>05</span>
-					<h3>Ongoing Professional Development &amp; Clinical Training</h3>
-					<ul class="inside">
-						<li><span></span>Patient-Centric Focus</li>
-						<li><span></span>Physician-Owned &amp; Operated</li>
-						<li><span></span>Family-Oriented Culture</li>
-					</ul>
-				</li>
-				<li>
-					<span>06</span>
-					<h3>Proprietary End-To-End IT Platform</h3>
-					<ul class="inside">
-						<li><span></span>Patient-Centric Focus</li>
-						<li><span></span>Physician-Owned &amp; Operated</li>
-						<li><span></span>Family-Oriented Culture</li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-	</section>
 	<section class="side-by-side bg-gray">
-		<div class="lg-wrap group">
+		<div class="wrap group">
 			<div class="half full content">
 				<h2>Become a Hospitalist</h2>
 				<p class="p-wrap">Apogee’s infrastructure is designed specifically with the best interests of you and your family in mind. Apogee is not merely a place of employment; it is a place to belong and call home. Apogee is not merely a place of employment; it is a place to belong and call home.</p>
