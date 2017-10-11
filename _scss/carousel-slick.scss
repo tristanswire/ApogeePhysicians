@@ -266,6 +266,7 @@ $slick-opacity-not-active: 0.25 !default;
     float: left;
     height: 100%;
     min-height: 1px;
+    cursor: -webkit-grab;
     [dir="rtl"] & {
         float: right;
     }

@@ -74,7 +74,7 @@
     width: 100%;
     position: relative;
     text-align: center;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 2em;
     @include bp(54) {
         text-align: left;

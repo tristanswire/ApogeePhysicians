@@ -127,6 +127,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/_images\/fabric.png": {
+		"ft": 32768,
+		"iS": 56471,
+		"oA": 0,
+		"oAP": "\/_images\/fabric.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/_images\/geometry.png": {
 		"ft": 32768,
 		"iS": 3354,
@@ -494,6 +505,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/_scss\/normalize.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/_scss\/tabs.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_scss\/tabs.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

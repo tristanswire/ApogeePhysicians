@@ -37,7 +37,9 @@
 	font-family: "proxima-nova",sans-serif;
 	font-weight: 700;
 	font-size: 0.875em;
+	border-radius: 0.25em;
 	@include bp(54) {
+		padding: 0.55em 2.25em;
 		font-size: 0.925em;
 	}
 	&:hover {

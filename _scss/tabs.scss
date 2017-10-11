@@ -1,0 +1,33 @@
+.tabs {
+
+}
+.nav-tabs {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li {
+        display: inline-block;
+        &.active {
+            a {
+                background-color: $blue;
+                border-color: $blue;
+                color: #fff;
+            }
+        }
+    }
+    a {
+        display: block;
+        border: 0.05em solid darken($gray-back,10%);
+        border-top-right-radius: 0.25em;
+        border-top-left-radius: 0.25em;
+        padding: 0.25em 0.5em;
+    }
+}
+.tab-pane {
+    display: none;
+    border: 0.05em solid darken($gray-back,10%);
+    padding: 1em;
+    &.active {
+        display: block;
+    }
+}

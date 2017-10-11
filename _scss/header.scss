@@ -25,10 +25,31 @@
             display: block;
         }
         > a {
+            position: relative;
             color: darken($gray,10%);
             font-weight: normal;
             font-size: 0.75em;
             margin: 0 1em;
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: -3px;
+                right: 0;
+                left: 50%;
+                height: 0.1em;
+                width: 0;
+                background-color: $blue;
+                transition: 250ms color ease-in-out,
+                            250ms width ease-in-out,
+                            250ms left ease-in-out;
+            }
+            &:hover {
+                color: darken($blue, 10%);
+                &:after {
+                    width: 100%;
+                    left: 0;
+                }
+            }
         }
     }
 }
@@ -52,7 +73,10 @@
     position: relative;
     padding: 1em;
     @include bp(54) {
-        padding: 1em 2em;
+        padding: 1em 1em 1em 2em;
+    }
+    @include bp(62.5) {
+        padding-right: 0.5em;
     }
 }
 .header-logo {
@@ -118,7 +142,7 @@ nav {
     &.main {
         display: block;
         position: absolute;
-        top: 5.2em;
+        top: 4.7em;
         right: 70em;
         left: -70em;
         height: 100em;
@@ -148,12 +172,12 @@ nav {
             padding: 0.65em 0;
             margin: 0;
             @include bp(54) {
-                font-size: 1em;
+                font-size: 1.15em;
                 display: inline-block;
                 float: none;
                 width: auto;
                 padding: 0;
-                margin: 0 1.5em;
+                margin: 0 1em;
                 &:after {
                     content: '';
                     position: absolute;
@@ -174,6 +198,9 @@ nav {
                         left: 0;
                     }
                 }
+            }
+            @include bp(62.5) {
+                margin: 0 1.5em;
             }
         }
         &.services {

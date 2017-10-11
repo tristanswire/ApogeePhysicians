@@ -99,7 +99,7 @@
     }
     @include bp(62.5) {
         min-height: 32em;
-        max-height: 36em;
+        max-height: 32em;
     }
     &.home {
         background-color: darken($gray-alt, 20%);
@@ -151,7 +151,7 @@
         padding: 16em 5em;
     }
     @include bp(62.5) {
-        padding: 20em 5em;
+        padding: 18em 5em;
     }
 }
 .hero-content {
@@ -160,17 +160,17 @@
     text-align: center;
     @include bp(54) {
         position: absolute;
-        top: 42.5%;
-        left: 0;
+        top: 45%;
+        left: 7.5%;
         transform: translate(5%, -45%);
         max-width: 34em;
         text-align: left;
     }
     @include bp(62.5) {
-        top: 37.5%;
+        top: 40%;
     }
     @include bp(80) {
-        transform: translate(30%, -45%);
+        left: 10%;
         max-width: 36em;
     }
     h1 {
@@ -276,7 +276,7 @@
 .services-container {
     background-color: $gray-back;
     padding: 4em 0;
-    background-image: url(_images/greyzz.png);
+    background-image: url(_images/fabric.png);
     img {
         display: block;
         width: 100%;

@@ -8,29 +8,6 @@ function homeCarousel () {
     jQuery('.carousel').slick();
 }
 
-function colorChange () {
-    /*jQuery('nav a:first-of-type').hover( function () {
-        if( jQuery(this).hasClass('active') ) {
-            jQuery(this).removeClass('active').delay(400).queue(function(next){
-                jQuery('.hero.careers').removeClass('active');
-                next();
-            });
-        } else {
-            jQuery(this).addClass('active');
-            jQuery('.hero.careers').addClass('active');
-        }
-    });
-    jQuery('nav a:last-of-type').hover( function () {
-        if( jQuery(this).hasClass('active') ) {
-            jQuery(this).removeClass('active');
-            jQuery('.hero.services').removeClass('active');
-        } else {
-            jQuery(this).addClass('active');
-            jQuery('.hero.services').addClass('active');
-        }
-    });*/
-}
-
 function menuTrigger () {
     jQuery('.menu-trigger').click( function () {
         jQuery(this).toggleClass('active');
@@ -179,10 +156,21 @@ function bootstrapTabs () {
     })
 }
 
+function matchHeight () {
+    var currentHeight = 0;
+	var maxHeight = 0;
+	jQuery('.stats li').each(function() {
+		currentHeight = $(this).outerHeight();
+		if(currentHeight > maxHeight) {
+			maxHeight = currentHeight;
+        }
+	});
+	jQuery('.stats li').css('height', maxHeight);
+}
+
 jQuery(document).ready( function() {
     footerCollapse();
     homeCarousel();
-    colorChange();
     menuTrigger();
     activeNav();
     gridShow();
@@ -190,6 +178,7 @@ jQuery(document).ready( function() {
     dropdownList();
     aosJS();
     bootstrapTabs();
+    matchHeight();
 });
 /* END DOC READY */
 

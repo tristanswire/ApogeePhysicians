@@ -43,8 +43,29 @@
         color: #fff;
         font-weight: 700;
         padding: 1em;
-        min-height: 15em;
-        margin-bottom: 2em;
+        max-height: 16em;
+        max-width: 16em;
+        margin: 0 auto 2em;
+        @include bp(30) {
+            float: left;
+            width: 48%;
+            margin: 0 4% 2em 0;
+            max-height: none;
+            max-width: none;
+            &:nth-child(2n+2) {
+                margin-right: 0;
+            }
+        }
+        @include bp(54) {
+            width: 32%;
+            margin: 0 2% 0 0;
+            &:nth-child(2n+2) {
+                margin-right: 2%;
+            }
+            &:nth-child(3n+3) {
+                margin-right: 0;
+            }
+        }
         &:nth-child(2) {
             background-color: darken($gray-back, 7.5%);
             color: $black;
@@ -69,10 +90,6 @@
             h5 {
                 color: $blue-dk;
             }
-        }
-        @include bp(54) {
-            width: 32%;
-            margin: 0 2% 0 0;
         }
     }
     circle {
@@ -146,13 +163,43 @@
             span {
                 width: 90%;
                 position: absolute;
-                top: 36%;
+                top: 42.5%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 &:after {
                     content: '%';
                 }
+                @include bp(54) {
+                    top: 40%;
+                }
             }
         }
     }
+}
+
+/* ========= Button Background Pulse Animation =========== */
+
+@keyframes border {
+  0% {
+    //background-color: $orange;
+    border-color: $orange;
+  }
+  100% {
+    //background-color: $blue;
+    border-color: $blue;
+  }
+}
+
+.first.orange {
+    margin: 0 auto;
+    border: 0.15em solid $blue;
+    background-color: $blue;
+    animation-name: border;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
 }

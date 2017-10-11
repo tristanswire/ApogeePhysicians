@@ -14,7 +14,7 @@
 }
 .wrap {
 	width: 90%;
-	max-width: 62.5em;
+	max-width: 60em;
 	margin: 0 auto;
 	@include bp(62.5) {
 		width: 100%;
@@ -23,7 +23,7 @@
 .sm-wrap {
 	position: relative;
 	width: 90%;
-	max-width: 44em;
+	max-width: 52em;
 	margin: 0 auto;
 	@include bp(54) {
 		width: 100%;
