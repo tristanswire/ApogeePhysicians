@@ -1906,17 +1906,17 @@ img {
     border-color: #0071CE; } }
 
 .first.orange {
-  margin: 0 auto;
-  border: 0.15em solid #0071CE;
-  background-color: #0071CE;
-  animation-name: border;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-fill-mode: none;
-  animation-play-state: running; }
+  /*margin: 0 auto;
+    border: 0.15em solid $blue;
+    background-color: $blue;
+    animation-name: border;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;*/ }
 
 .icon {
   display: inline-block;
