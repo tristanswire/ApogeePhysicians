@@ -36,7 +36,7 @@ get_header(); ?>
 
 		</div>
 	</section>
-	<section class="container">
+	<!-- <section class="container">
 		<div class="tabs wrap group">
 	        <ul class="nav nav-tabs">
 	            <li class="active"><a href="#tab1default" data-toggle="tab">Default 1</a></li>
@@ -49,7 +49,7 @@ get_header(); ?>
 	            <div class="tab-pane fade" id="tab3default">Default 3</div>
 	        </div>
 		</div>
-	</section>
+	</section> -->
 	<section class="list-container wrap">
 		<h2 class="blue">Join the Apogee Family</h2>
 		<p class="p-wrap intro">More than any single attribute, our culture is most responsible for our group’s success.</p>
@@ -213,7 +213,7 @@ get_header(); ?>
 			</div>
 		</div>
 	</section>
-	<section class="testimonial-container white">
+	<section class="testimonial-container">
 		<h2>Physician Testimonials</h2>
 		<ul class="carousel-testimonial carousel">
 			<li>

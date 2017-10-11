@@ -25,9 +25,14 @@ footer {
         width: 35%;
         text-align: left;
     }
-    img.logo {
+    img {
+        display: block;
         padding: 0 0 0.25em;
-        max-width: 100%;
+        max-width: 12em;
+        margin: 0 auto;
+        @include bp(54) {
+            margin: 0;
+        }
     }
     a {
         display: inline;

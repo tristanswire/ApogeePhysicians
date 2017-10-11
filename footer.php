@@ -17,7 +17,7 @@
   		<div class="footer-content group">
     		<div class="footer-logo">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-	      			<img class="logo" src="<?php bloginfo('template_directory'); ?>/_images/ap-logo-gray.png">
+	      			<img class="logo" src="<?php bloginfo('template_directory'); ?>/_images/ap-logo-white.png">
 				</a>
         		<a href="https://www.google.com/maps/place/15059+N+Scottsdale+Rd+%23600,+Scottsdale,+AZ+85254/@33.6233264,-111.9277598,17z/data=!3m1!4b1!4m5!3m4!1s0x872b743faadc46e1:0xbc13b91f3b9f1426!8m2!3d33.6233264!4d-111.9255711">15059 N. Scottsdale Road <br /> Suite 600
     				<br />Scottsdale, AZ 85254

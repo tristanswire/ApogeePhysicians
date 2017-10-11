@@ -10,106 +10,41 @@
         background-position: top;
         background-repeat: no-repeat;
         max-height: 80vh;
-        &.careers.home {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            opacity: 0;
-            transition: opacity 500ms ease-in-out;
-            .hero-quote {
-                background-color: $blue;
-            }
-            .btn {
-                background-color: transparent;
-                border-color: #fff;
-                color: #fff;
-            }
-            .outline-white {
-                background-color: $blue;
-                border-color: $blue;
-                color: #fff;
-            }
-            .hero-container {
-                background-color: rgba(25, 25, 25, 0.15);
-            }
-            .hero-content {
-                .btn {
-                    transition: background-color 500ms ease-in-out,
-                                border-color 500ms ease-in-out,
-                                color 500ms ease-in-out;
-                }
-            }
-            &.home {
-                background: url(_images/careers-hero-img.jpg) no-repeat center top;
-                background-size: cover;
-                background-position: 60%;
-                background-repeat: no-repeat;
-            }
-            &.active {
-                left: 0;
-                right: 0;
-                opacity: 1;
-                z-index: 4;
-            }
-        }
-        &.services.home {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            opacity: 0;
-            transition: opacity 500ms ease-in-out;
-            .hero-quote {
-                background-color: $black;
-            }
-            .btn {
-                background-color: transparent;
-                border-color: #fff;
-                color: #fff;
-            }
-            .outline-white {
-                background-color: $black;
-                border-color: $black;
-                color: #fff;
-            }
-            .hero-container {
-                background-color: rgba(25, 25, 25, 0.15);
-            }
-            .hero-content {
-                .btn {
-                    transition: background-color 500ms ease-in-out,
-                                border-color 500ms ease-in-out,
-                                color 500ms ease-in-out;
-                }
-            }
-            &.home {
-                background: url(_images/services-hero-img.jpg) no-repeat center top;
-                background-size: cover;
-                background-position: 60%;
-                background-repeat: no-repeat;
-            }
-            &.active {
-                left: 0;
-                right: 0;
-                opacity: 1;
-                z-index: 4;
-            }
-        }
     }
     @include bp(62.5) {
         min-height: 32em;
         max-height: 32em;
     }
     &.home {
-        background-color: darken($gray-alt, 20%);
-        background-image: url(_images/home-hero-img.jpg);
-        //background-position: 0;
+        background-color: $gray;
+        transition: all 1000ms ease-in-out;
         @include bp(54) {
             background-position: 60%;
+            background-image: url(_images/home-hero-img.jpg);
+        }
+        &:after {
+            content: '';
+            opacity: 0;
+            transition: opacity 1000ms ease-in-out;
         }
         .hero-quote {
             background-color: $blue;
+        }
+        &.careers {
+            transition: all 1000ms ease-in-out;
+            background-image: url(_images/careers-hero-img.jpg);
+            padding-bottom: 0;
+            &:after {
+                content: '';
+                background-color: rgba(25, 25, 25, 0.35);
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 2;
+                opacity: 1;
+            }
         }
     }
     &.careers {
@@ -188,6 +123,7 @@
     p {
         margin: 0 auto;
         padding-bottom: 2em;
+        max-width: 26em;
         @include bp(54) {
             max-width: 26em;
             margin: 0;
@@ -231,7 +167,7 @@
         margin: 0 auto;
         font-weight: 400;
         max-width: 24em;
-        font-size: 0.875em;
+        font-size: 0.9em;
     }
     span {
         font-weight: 700;
@@ -248,8 +184,11 @@
     }
 }
 .career-container {
-    padding: 4em 0;
+    padding: 4em 0 2em;
     text-align: center;
+    @include bp(44) {
+        padding: 4em 0;
+    }
     @include bp(54) {
         text-align: left;
     }
@@ -275,8 +214,11 @@
 }
 .services-container {
     background-color: $gray-back;
-    padding: 4em 0;
+    padding: 4em 0 2em;
     background-image: url(_images/fabric.png);
+    @include bp(44) {
+        padding: 4em 0;
+    }
     img {
         display: block;
         width: 100%;
@@ -403,13 +345,6 @@
         .carousel-content {
             border-color: #fff;
             background-color: $gray-back;
-        }
-    }
-    &.white {
-        background-color: #fff;
-        .carousel-content {
-            border-color: $gray-alt;
-            background-color: $gray-alt;
         }
     }
 }

@@ -23,16 +23,16 @@
                 animation: dash 3s linear forwards;
             }
             &.stat {
-                animation-delay: 800ms;
+                //animation-delay: 1s;
             }
             &.stat-2 {
-                animation-delay: 1800ms;
+                animation-delay: 2s;
             }
             &.stat-3 {
-                animation-delay: 2400ms;
+                animation-delay: 3s;
             }
             &.stat-4 {
-                animation-delay: 3000ms;
+                animation-delay: 4s;
             }
         }
     }
@@ -144,7 +144,7 @@
             //font-size: 3em;
             transition: font-size 2000ms ease-in-out;
             &:after {
-                content: 'FTEs';
+                //content: 'FTEs';
                 font-size: 1rem;
             }
         }

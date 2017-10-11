@@ -19,6 +19,9 @@ html,body {
 	-webkit-font-smoothing: antialiased;
 	font-size: 16px;
 	@include bp(30) {
+		font-size: calc( 16px + 8 * ((100vw - 500px) / 1500));
+	}
+	@include bp(62.5) {
 		font-size: calc( 14px + 8 * ((100vw - 500px) / 1500));
 	}
 	@include bp(100) {

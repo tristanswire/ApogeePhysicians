@@ -98,7 +98,7 @@
 .menu-trigger {
     display: block;
     position: absolute;
-    top: 2.1em;
+    top: 1.65em;
     right: 1.5em;
     width: 1.875em;
     margin: 0;
@@ -201,6 +201,7 @@ nav {
             }
             @include bp(62.5) {
                 margin: 0 1.5em;
+                font-size: 1em;
             }
         }
         &.services {

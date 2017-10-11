@@ -4,6 +4,18 @@ function footerCollapse() {
   });
 };
 
+function swapBackground() {
+    jQuery('nav a:first-of-type').hover( function () {
+        /*if (jQuery(this).hasClass('.active')) {
+            jQuery(this).removeClass('.active')
+            jQuery('.hero.home').removeClass('careers');
+        } else {
+            jQuery(this).addClass('.active')
+            jQuery('.hero.home').addClass('careers');
+        }*/
+    });
+}
+
 function homeCarousel () {
     jQuery('.carousel').slick();
 }
@@ -51,6 +63,7 @@ function numberAnimation () {
                 }
             });
         });
+        jQuery('.stats').addClass('visible');
     }
     function gridTwo(){
         $('#counter_two span').each(function () {
@@ -179,6 +192,7 @@ jQuery(document).ready( function() {
     aosJS();
     bootstrapTabs();
     matchHeight();
+    swapBackground();
 });
 /* END DOC READY */
 
