@@ -71,12 +71,16 @@ get_header(); ?>
 			</li>
 		</ul>
 	</section>
-	<!-- <section class="custom-map">
+	 <section class="custom-map">
 		<div class="wrap">
 			<h2>Explore Our Career Locations</h2>
+			<?php dynamic_sidebar('phy-map');?>
+			<?php //dynamic_sidebar('np-map');?>
+
+
 		</div>
 	</section>
-	<section class="bg-gray">
+	<!-- <section class="bg-gray">
 		<div class="wrap">
 			<h2 class="blue">Professional Development</h2>
 			<p class="p-wrap">Apogee Physicians is dedicated to delivering the Apogee Promise for every patient, every time. The Promise is to provide excellent care through the pillars of Safety, Quality, Service, and Value.</p>
@@ -198,6 +202,12 @@ get_header(); ?>
 			</ul>
 		</div>
 	</section>
+
+	<section>
+
+	</section>
+
+
 	<section class="side-by-side bg-gray">
 		<div class="wrap group">
 			<div class="half full content">
@@ -245,5 +255,9 @@ get_header(); ?>
 			</li>
 		</ul>
 	</section>
+
+	<!-- <section class="wrap">
+		<?php dynamic_sidebar('ap-event');?>
+	</section> -->
 <?php
 get_footer();
