@@ -163,9 +163,9 @@ function aosJS () {
 }
 
 function bootstrapTabs () {
-    jQuery('.nav-tabs').click(function (e) {
-        e.preventDefault()
-        jQuery(this).tab('show')
+    jQuery('.career-tabs').click(function (e) {
+        jQuery(this).tab('show');
+        e.preventDefault();
     })
 }
 

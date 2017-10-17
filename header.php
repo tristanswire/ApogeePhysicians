@@ -23,8 +23,9 @@
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" type="image/x-icon">
-	<?php wp_head(); ?>
+	<!-- jQuery -->
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
