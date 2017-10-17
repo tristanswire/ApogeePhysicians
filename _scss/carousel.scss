@@ -1,22 +1,6 @@
-.carousel-testimonial {
+.carousel-list {
     max-width: 60em;
     margin: 0 auto;
-    span {
-        display: block;
-        color: $gray-subtitle;
-        font-size: 1rem;
-        margin-top: 0.5em;
-    }
-    img {
-        display: block;
-        margin: 0 auto;
-        max-width: 12em;
-        @include bp(54) {
-            position: absolute;
-            top: -1em;
-            left: -1em;
-        }
-    }
     .slick-next,
     .slick-prev {
         height: 50px;
@@ -68,7 +52,29 @@
         }
     }
 }
-.carousel-content {
+.carousel-container {
+    text-align: center;
+    background-color: $gray-back;
+    padding: 2em 0 6em;
+    background-image: url(_images/greyzz.png);
+    h2 {
+        color: $black;
+        padding-bottom: 1em;
+        margin-bottom: 0;
+    }
+    /*&.services {
+        background-color: #fff;
+        padding: 2em 0;
+        @include bp(54) {
+            padding: 4em 0 8em;
+        }
+        .carousel-content {
+            border-color: #fff;
+            background-color: $gray-back;
+        }
+    }*/
+}
+.testimonial-container {
     max-width: 48em;
     margin: 0 auto;
     width: 100%;
@@ -78,8 +84,17 @@
     padding: 2em;
     @include bp(54) {
         text-align: left;
-        padding: 2em 2em 2em 13.5em;
-        border-top: 2em solid $gray-back;
-        border-left: 2em solid $gray-back;
+        padding: 2em;
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 14em;
+    }
+    span {
+        display: block;
+        color: $gray-subtitle;
+        font-size: 1rem;
+        margin-top: 0.5em;
     }
 }

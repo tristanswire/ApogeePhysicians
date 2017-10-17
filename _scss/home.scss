@@ -85,9 +85,6 @@
         width: 100%;
         padding: 16em 5em;
     }
-    @include bp(62.5) {
-        padding: 18em 5em;
-    }
 }
 .hero-content {
     display: block;
@@ -324,66 +321,5 @@
     }
     &.grid-six {
         transition-delay: 5s;
-    }
-}
-.testimonial-container {
-    text-align: center;
-    background-color: $gray-back;
-    padding: 2em 0 6em;
-    background-image: url(_images/geometry.png);
-    h2 {
-        color: $black;
-        padding-bottom: 1em;
-        margin-bottom: 0;
-    }
-    &.services {
-        background-color: #fff;
-        padding: 2em 0;
-        @include bp(54) {
-            padding: 4em 0 8em;
-        }
-        .carousel-content {
-            border-color: #fff;
-            background-color: $gray-back;
-        }
-    }
-}
-
-.container {
-    padding: 4em 0;
-    h2 {
-        text-align: left;
-        padding: 0 0 1em;
-    }
-    h3 {
-        margin: 0;
-        font-size: 1.35rem;
-        line-height: 125%;
-    }
-    ul.top {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        > li {
-            float: left;
-            width: 46%;
-            margin: 0 8% 3em 0;
-            &:nth-child(2n+2) {
-                margin-right: 0;
-            }
-        }
-        span {
-            font-size: 2em;
-            font-weight: 700;
-            color: #e7e7e7;
-            display: block;
-            margin-bottom: 0.15em;
-        }
-    }
-    ul.inside {
-        padding-top: 0.75em;
-        li {
-            line-height: 125%;
-        }
     }
 }

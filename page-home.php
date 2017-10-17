@@ -58,7 +58,7 @@ get_header(); ?>
 				</div>
 			</div>
 		</div>
-		<div id="waypoint" class="grid-container">
+		<div class="grid-container">
 			<div class="wrap" style="max-width: 54em;">
 				<div>
 					<h2 class="blue">Apogee at a Glance</h2>
@@ -150,31 +150,37 @@ get_header(); ?>
 				</div>
 			</div>
 		</div>
-		<div class="testimonial-container">
+		<div class="carousel-container">
 			<h2>Physician Testimonials</h2>
-			<ul class="carousel-testimonial carousel">
+			<ul class="carousel-list carousel">
 				<li>
-					<div class="carousel-content">
-						<img src="http://placehold.it/500x500" alt="..." data-aos="fade-up-right" data-aos-duration="750" data-aos-once="true" />
-						<div data-aos="fade-up-left" data-aos-duration="750" data-aos-delay="400" data-aos-once="true">
+					<div class="testimonial-container group">
+						<div class="third first">
+							<img src="http://placehold.it/500x500" alt="..." data-aos="fade-up-right" data-aos-duration="750" data-aos-once="true" />
+						</div>
+						<div class="two-third" data-aos="fade-up-left" data-aos-duration="750" data-aos-delay="400" data-aos-once="true">
 							<h3>Jamie Upegui Gomez <span>MD</span></h3>
 							<p>Apogee is a great company that offers valuable resources and benefits to me as a physician. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
 						</div>
 					</div>
 				</li>
 				<li>
-					<div class="carousel-content">
-						<img src="http://placehold.it/500x500" alt="..." />
-						<div>
+					<div class="testimonial-container group">
+						<div class="third first">
+							<img src="http://placehold.it/500x500" alt="..." data-aos="fade-up-right" data-aos-duration="750" data-aos-once="true" />
+						</div>
+						<div class="two-third" data-aos="fade-up-left" data-aos-duration="750" data-aos-delay="400" data-aos-once="true">
 							<h3>Jamie Upegui Gomez <span>MD</span></h3>
 							<p>Apogee is a great company that offers valuable resources and benefits to me as a physician. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
 						</div>
 					</div>
 				</li>
 				<li>
-					<div class="carousel-content">
-						<img src="http://placehold.it/500x500" alt="..." />
-						<div>
+					<div class="testimonial-container group">
+						<div class="third first">
+							<img src="http://placehold.it/500x500" alt="..." data-aos="fade-up-right" data-aos-duration="750" data-aos-once="true" />
+						</div>
+						<div class="two-third" data-aos="fade-up-left" data-aos-duration="750" data-aos-delay="400" data-aos-once="true">
 							<h3>Jamie Upegui Gomez <span>MD</span></h3>
 							<p>Apogee is a great company that offers valuable resources and benefits to me as a physician. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
 						</div>

@@ -204,11 +204,11 @@ img {
 	margin: 0 auto;
 }
 
-/*************** FILE IMPORTS ***************/
 
+/*************** FILE IMPORTS ***************/
+@import "map";
 @import "carousel-slick";
 @import "aos";
-@import "tabs";
 @import "bootstrap";
 @import "animations";
 @import "icons";
@@ -216,4 +216,5 @@ img {
 @import "home";
 @import "footer";
 @import "careers";
+@import "careers-tabs";
 @import "carousel";

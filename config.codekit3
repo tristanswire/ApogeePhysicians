@@ -191,6 +191,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/_images\/new-year-bg.png": {
+		"ft": 32768,
+		"iS": 3866,
+		"oA": 0,
+		"oAP": "\/_images\/new-year-bg.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/_images\/notebook.png": {
 		"ft": 32768,
 		"iS": 15079,
@@ -200,6 +211,16 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"\/_images\/nppa-cover.jpg": {
+		"ft": 16384,
+		"iS": 180445,
+		"oA": 0,
+		"oAP": "\/_images\/nppa-cover.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"\/_images\/organic-tiles.png": {
@@ -222,6 +243,16 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"\/_images\/physician-cover.jpg": {
+		"ft": 16384,
+		"iS": 164590,
+		"oA": 0,
+		"oAP": "\/_images\/physician-cover.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"\/_images\/physician.png": {
@@ -352,16 +383,16 @@
 		"uL": 1
 		},
 	"\/_scss\/base.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
-		"ma": 0,
+		"ma": 1,
 		"oA": 0,
 		"oAP": "\/style.css",
 		"oF": 2,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"\/_scss\/bootstrap.scss": {
@@ -373,6 +404,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/_scss\/bootstrap.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/_scss\/careers-tabs.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_scss\/careers-tabs.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -481,6 +525,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/_scss\/map.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_scss\/map.css",
+		"oF": 1,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/_scss\/mixins.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -520,23 +577,16 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/_scss\/tabs.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/_scss\/tabs.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/_svg\/icon-briefcase.php": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/_svg\/icon-briefcase.php",
+		"oF": 0
+		},
+	"\/_svg\/icon-chevron-down.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_svg\/icon-chevron-down.php",
 		"oF": 0
 		},
 	"\/_svg\/icon-chevron-left-black.svg": {
@@ -957,37 +1007,37 @@
 	"\/_js\/functions.js": [
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/_js\/library\/jquery.waypoints.js",
+			"linkedFileAbbreviatedPath": "\/_js\/library\/aos.js",
 			"position": 0,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/_js\/library\/jquery.initialize.js",
+			"linkedFileAbbreviatedPath": "\/_js\/library\/bootstrap.js",
 			"position": 1,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/_js\/library\/slick.min.js",
+			"linkedFileAbbreviatedPath": "\/_js\/library\/jquery.animateNumber.js",
 			"position": 2,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/_js\/library\/aos.js",
+			"linkedFileAbbreviatedPath": "\/_js\/library\/jquery.initialize.js",
 			"position": 3,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/_js\/library\/jquery.animateNumber.js",
+			"linkedFileAbbreviatedPath": "\/_js\/library\/jquery.waypoints.js",
 			"position": 4,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/_js\/library\/bootstrap.js",
+			"linkedFileAbbreviatedPath": "\/_js\/library\/slick.min.js",
 			"position": 5,
 			"type": 0
 			}
