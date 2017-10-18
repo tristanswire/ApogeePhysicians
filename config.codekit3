@@ -117,6 +117,16 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/_images\/bg.jpg": {
+		"ft": 16384,
+		"iS": 647921,
+		"oA": 0,
+		"oAP": "\/_images\/bg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/_images\/career-map.png": {
 		"ft": 32768,
 		"iS": 70344,
@@ -232,6 +242,16 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"\/_images\/phy-contact.jpg": {
+		"ft": 16384,
+		"iS": 84306,
+		"oA": 0,
+		"oAP": "\/_images\/phy-contact.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"\/_images\/physician-2.png": {
@@ -577,6 +597,16 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/_scss\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/_scss\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/_svg\/icon-briefcase.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -877,6 +907,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/page-home.php",
+		"oF": 0
+		},
+	"\/page-modal.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-modal.php",
 		"oF": 0
 		},
 	"\/page-services.php": {
