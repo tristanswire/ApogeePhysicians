@@ -1,0 +1,223 @@
+body{
+  background: #fff;
+}
+
+.mapplic-lightbox{
+  max-width:1000px !important ;
+
+  .mapplic-lightbox-title {
+
+    display: none;
+    margin-bottom: 0;
+    margin-top: 1em;
+    color: #d0d9dd;
+    font-weight: 600;
+    font-size: 2em;
+    padding-left: 1.3em;
+  }
+}
+
+.map{
+    padding: 2em 0;
+    margin: 0 auto;
+
+    h2{
+    text-align: center;
+    }
+
+
+    li{
+      list-style: none;
+    }
+
+    .mapplic-id396{
+      .mapplic-map{
+        width:100% !important;
+        height: 100%;
+      }
+    }
+}
+
+/*** Program Modal ***/
+
+// .program-header{
+//   background-image: url(_images/bg.jpg);
+//   height: 400px;
+//   width: 100%;
+//   text-align: center;
+//   display: table;
+//
+//   .header-content{
+//     display: table-cell;
+//     vertical-align: middle;
+//
+//     h1{
+//       color: #fff;
+//       margin-bottom: .8em;
+//     }
+//
+//     a{
+//       font-size: 1.2em;
+//     }
+//   }
+//
+// }
+
+
+.clearfix{
+  overflow:hidden;
+}
+
+.contact-person{
+    border-top: 2px solid #E5EAEC;
+    padding: 1em 0;
+    margin-top: 1em;
+
+  img{
+
+      float: left;
+      width: 25%;
+      border-radius: 50%;
+  }
+
+  .contact-info{
+    width: 70%;
+    float: right;
+    padding: 1em 0;
+    line-height: 1.5em;
+      a{
+      // display: block;
+      font-size: .85em;
+      margin-right: 15px;
+
+        .icon.icon-mail{
+          margin-right: 2px;
+        }
+    }
+
+    p{
+      font-size: .9em;
+      color: #6F787E;
+    }
+
+    h4,p{
+      margin:0;
+      font-size: .9em;
+    }
+  }
+}
+
+
+.program-bottom{
+  max-width: 90%;
+  padding: 0 2em;
+  font-size: .9em;
+
+  h1{
+    color: #d0d9dd;
+    font-weight:600;
+    font-size: 2em;
+    padding-left: .5em;
+    margin-bottom: 0;
+    margin-top: 1em;
+
+  }
+
+}
+
+.program-info{
+  padding: 2em 1em;
+
+  h2{
+    margin-top: 0;
+    font-size: 1.6em;
+  }
+
+}
+
+.phy-contact{
+  padding-left: 3em;
+  padding-top: 1em;
+
+  .about-city{
+    padding-left: 1.6em;
+    list-style: none;
+
+    li{
+      margin-bottom: .5em;
+      text-indent: -1.6em;
+      &::before{
+        font-family: FontAwesome;
+        color: #43CC9E;
+        content: "\f06c";
+        float: left;
+        width: 1.6em;
+      }
+
+    }
+  }
+}
+
+//Medium size
+@media screen and (max-width: 999px){
+  .contact-person{
+    .contact-info{
+        a{
+        display: inline-block;
+        margin-right: .5em;
+        span{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
+// Mobile
+@media screen and (max-width: 863px){
+
+  .program-bottom h1{
+    padding-left: 0;
+    margin-bottom: .5em;
+  }
+
+  .phy-contact{
+    padding: 0;
+
+    h3{
+      margin-top: 0;
+    }
+
+    .contact-person{
+      text-align: center;
+
+
+      img{
+        width: 30%;
+
+      }
+
+      img, .contact-info{
+        float:none;
+        display: block;
+        margin: 1em auto 0;
+      }
+
+      .contact-info{
+          a{
+          display: block;
+          span{
+            display: inline;
+          }
+        }
+      }
+    }
+
+  }
+
+  .program-info{
+    padding: .1em 0;
+    margin-bottom: 0;
+  }
+}
