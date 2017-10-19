@@ -128,6 +128,7 @@ function apogee_physicians_widgets_init() {
 		'id' =>'ap-event'
 
 	));
+
 }
 add_action( 'widgets_init', 'apogee_physicians_widgets_init' );
 
