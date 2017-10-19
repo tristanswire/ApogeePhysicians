@@ -1,8 +1,9 @@
 .list-container {
     padding: 4em 0;
     text-align: center;
+    background-color: $gray-back;
     @include bp(54) {
-        padding: 4em 0;
+        padding: 6em 0;
     }
     h2,
     h3 {
@@ -45,11 +46,20 @@
     padding: 2em 0;
     text-align: center;
     position: relative;
+    background-image: url(_images/apply-flip.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     @include bp(54) {
         text-align: left;
-    }
-    @include bp(62.5) {
         padding: 6em 0;
+    }
+    &:after {
+        content: '';
+        background-color: rgba(45, 45, 45, 0.65);
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        z-index: 0;
     }
     h2 {
         margin: 0 auto 0.5em;
@@ -59,25 +69,22 @@
         margin: 0 auto;
         @include bp(54) {
             display: block;
-            margin: -6em auto 0;
+            margin: 0 auto;
             max-width: 26em;
-            position: absolute;
-            bottom: 0;
-            right: 2em;
-        }
-        @include bp(62.5) {
-            max-width: 32em;
-            right: 2.5%;
-        }
-        @include bp(80) {
-            max-width: none;
-            right: 10%;
         }
     }
     .content {
+        position: relative;
+        z-index: 2;
+        float: right;
+        width: 50%;
+        h2,
+        p {
+            color: #fff;
+        }
         p {
             padding-bottom: 1.5em;
-            max-width: 36em;
+            max-width: 34em;
         }
     }
 }
@@ -123,6 +130,7 @@
         p {
             margin: 0 auto;
             padding-bottom: 2em;
+            max-width: 35em;
             @include bp(62.5) {
                 padding-bottom: 4em;
             }
@@ -194,10 +202,7 @@
     a {
         display: block;
         padding-bottom: 0.35em;
-        font-size: 0.875em;
-        @include bp(62.5) {
-            font-size: 1em;
-        }
+        font-size: 0.9em;
         &:hover {
             color: $orange;
             svg {

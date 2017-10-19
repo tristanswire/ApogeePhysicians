@@ -1,0 +1,80 @@
+.careers-two {
+    transition: all 1000ms ease-in-out;
+    background-image: url(_images/careers-hero-img.jpg);
+    padding-bottom: 0;
+    &:after {
+        content: '';
+        background-color: rgba(25, 25, 25, 0.35);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        opacity: 1;
+    }
+}
+.location-map {
+    text-align: center;
+    padding: 4em 0;
+    h2 {
+        margin-top: 0;
+        color: $blue;
+    }
+    p {
+        margin: 0 auto;
+    }
+    img {
+        display: block;
+        margin: 0 auto 2em;
+    }
+}
+.location-tabs {
+    padding: 2em 0;
+    margin: 0;
+    list-style: none;
+    .btn {
+        background-color: transparent;
+        border-radius: 0;
+        color: $blue;
+        width: 16em;
+        display: block;
+    }
+    li {
+        display: inline-block;
+        &.active {
+            .btn {
+                background-color: $blue;
+                border-color: $blue;
+                color: #fff;
+            }
+            .icon {
+                display: block;
+                animation: arrowdown 2s ease-in-out infinite;
+            }
+        }
+        &:first-child {
+            .btn {
+                margin-right: -0.175em;
+            }
+        }
+        &:last-child {
+            .btn {
+                margin-left: -0.175em;
+            }
+        }
+    }
+    .icon {
+        display: none;
+        color: $blue;
+        margin: 0 auto;
+        font-size: 1.5em;
+    }
+}
+.location-content {
+    a {
+        text-decoration: underline;
+    }
+}
+.prof-dev {
+}

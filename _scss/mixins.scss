@@ -1,27 +1,27 @@
 @mixin bp($point) {
 	@if $point == 100 {
-		@media (min-width: 120em) { @content; }
+		@media (min-width: 120em) { @content; } /* 1920px */
 	}
 	@if $point == 100 {
-		@media (min-width: 100em) { @content; }
+		@media (min-width: 100em) { @content; } /* 1600px */
 	}
 	@if $point == 80 {
-		@media (min-width: 80em) { @content; }
+		@media (min-width: 80em) { @content; } /* 1280px */
 	}
 	@else if $point == 62.5 {
-		@media (min-width: 62.5em) { @content; }
+		@media (min-width: 62.5em) { @content; } /* 1000px */
 	}
 	@else if $point == 54 {
-		@media (min-width: 54em) { @content; }
+		@media (min-width: 54em) { @content; } /* 864px */
 	}
 	@else if $point == 44 {
-		@media (min-width: 44em) { @content; }
+		@media (min-width: 44em) { @content; } /* 704px */
 	}
 	@else if $point == 30 {
-		@media (min-width: 32em) { @content; }
+		@media (min-width: 32em) { @content; } /* 512px */
 	}
 	@else if $point == 25 {
-		@media (min-width: 25em) { @content; }
+		@media (min-width: 25em) { @content; } /* 400px */
 	}
 }
 

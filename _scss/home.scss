@@ -30,40 +30,6 @@
         .hero-quote {
             background-color: $blue;
         }
-        &.careers {
-            transition: all 1000ms ease-in-out;
-            background-image: url(_images/careers-hero-img.jpg);
-            padding-bottom: 0;
-            &:after {
-                content: '';
-                background-color: rgba(25, 25, 25, 0.35);
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                z-index: 2;
-                opacity: 1;
-            }
-        }
-    }
-    &.careers {
-        background-color: darken($gray-alt, 20%);
-        padding-bottom: 2em;
-        @include bp(54) {
-            background-image: url(_images/careers-hero-img.jpg);
-            padding-bottom: 0;
-            &:after {
-                content: '';
-                background-color: rgba(25, 25, 25, 0.35);
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                z-index: 2;
-            }
-        }
     }
     &.services {
         background-color: darken($gray-alt, 20%);

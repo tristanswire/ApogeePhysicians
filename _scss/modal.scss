@@ -1,0 +1,34 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(45, 45, 45, 0.5);
+    z-index: 100;
+    &.visible {
+        display: block;
+    }
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    padding: 2em 2em 1em;
+    background-color: #fff;
+    text-align: left;
+    max-height: 90vh;
+    @include bp(54) {
+        width: 65%;
+    }
+    .icon {
+        position: absolute;
+        top: 0.75em;
+        right: 0.75em;
+        color: $blue;
+        font-size: 1.5em;
+        &:hover {
+            color: $orange;
+        }
+    }
+}

@@ -208,7 +208,7 @@
 /* ======== Arrow Down Animation ======== */
 
 @keyframes arrowdown {
-    0%   { transform:translate(0,-20px); opacity: 0;  }
+    0%   { transform:translate(0,-3px); opacity: 0;  }
     50%  { opacity: 1;  }
-    100% { transform:translate(0,20px); opacity: 0; }
+    100% { transform:translate(0,10px); opacity: 0; }
 }

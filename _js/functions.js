@@ -163,13 +163,13 @@ function aosJS () {
 }
 
 function bootstrapTabs () {
-    jQuery('.career-tabs').click(function (e) {
+    jQuery('.tabs').click(function (e) {
         jQuery(this).tab('show');
         e.preventDefault();
-    })
+    });
 }
 
-function matchHeight () {
+function tabHeight () {
     var currentHeight = 0;
 	var maxHeight = 0;
 	jQuery('.stats li').each(function() {
@@ -179,6 +179,36 @@ function matchHeight () {
         }
 	});
 	jQuery('.stats li').css('height', maxHeight);
+}
+
+function matchHeight () {
+    /*var currentHeight = 0;
+	var maxHeight = 0;
+	jQuery('.professional-development .tabs li a h2').each(function() {
+		currentHeight = $(this).outerHeight();
+		if(currentHeight > maxHeight) {
+			maxHeight = currentHeight;
+        }
+	});
+	jQuery('.professional-development .tabs li a h2').css('height', maxHeight);*/
+}
+
+function toggleModal () {
+    jQuery('.modal-trigger').click(function(e) {
+        if(jQuery('.modal').hasClass('visible')) {
+            jQuery('.modal').removeClass('visible');
+            jQuery('body').removeClass('fixed');
+        } else {
+            jQuery('.modal').addClass('visible');
+            jQuery('body').addClass('fixed');
+        }
+        e.preventDefault();
+    });
+    jQuery('.modal').click(function(e) {
+        //jQuery('.modal').removeClass('visible');
+        //jQuery('body').removeClass('fixed');
+        //e.preventDefault();
+    });
 }
 
 jQuery(document).ready( function() {
@@ -193,6 +223,8 @@ jQuery(document).ready( function() {
     bootstrapTabs();
     matchHeight();
     swapBackground();
+    tabHeight();
+    toggleModal();
 });
 /* END DOC READY */
 

@@ -106,6 +106,26 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/_images\/apply-flip.jpg": {
+		"ft": 16384,
+		"iS": 113100,
+		"oA": 0,
+		"oAP": "\/_images\/apply-flip.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/apply.jpg": {
+		"ft": 16384,
+		"iS": 129832,
+		"oA": 0,
+		"oAP": "\/_images\/apply.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/_images\/au-logo.png": {
 		"ft": 32768,
 		"iS": 767630,
@@ -232,6 +252,16 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"\/_images\/pa-cover-new.jpg": {
+		"ft": 16384,
+		"iS": 130046,
+		"oA": 0,
+		"oAP": "\/_images\/pa-cover-new.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"\/_images\/physician-2.png": {
@@ -383,16 +413,16 @@
 		"uL": 1
 		},
 	"\/_scss\/base.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
-		"ma": 0,
+		"ma": 1,
 		"oA": 0,
-		"oAP": "\/_scss\/base.css",
-		"oF": 0,
-		"oS": 0,
+		"oAP": "\/style.css",
+		"oF": 2,
+		"oS": 3,
 		"uL": 1
 		},
 	"\/_scss\/bootstrap.scss": {
@@ -408,7 +438,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/_scss\/careers-tabs.scss": {
+	"\/_scss\/careers-two.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -416,7 +446,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/_scss\/careers-tabs.css",
+		"oAP": "\/_scss\/careers-two.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -538,6 +568,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/_scss\/modal.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_scss\/modal.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/_scss\/modules.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -560,6 +603,32 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/_scss\/normalize.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/_scss\/tabs-careers.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_scss\/tabs-careers.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/_scss\/tabs-professional.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_scss\/tabs-professional.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -632,6 +701,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/_svg\/icon-clipboard.php",
+		"oF": 0
+		},
+	"\/_svg\/icon-close.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_svg\/icon-close.php",
 		"oF": 0
 		},
 	"\/_svg\/icon-email.php": {
@@ -854,6 +929,12 @@
 		"oAP": "\/LICENSE",
 		"oF": 0
 		},
+	"\/page-careers-v2.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-careers-v2.php",
+		"oF": 0
+		},
 	"\/page-careers.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -991,6 +1072,44 @@
 "hooks": [
 	],
 "manualImportLinks": {
+	"\/_js\/functions.js": [
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/_js\/library\/aos.js",
+			"position": 0,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/_js\/library\/bootstrap.js",
+			"position": 1,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/_js\/library\/jquery.initialize.js",
+			"position": 2,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/_js\/library\/jquery.animateNumber.js",
+			"position": 3,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/_js\/library\/jquery.waypoints.js",
+			"position": 4,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/_js\/library\/slick.min.js",
+			"position": 5,
+			"type": 0
+			}
+		]
 	},
 "projectAttributes": {
 	"creationDate": 526945388,
