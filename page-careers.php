@@ -39,52 +39,46 @@ get_header(); ?>
 	<div class="tab-content">
 		<!-- BEGIN PHYSICIAN SECTION -->
 			<div class="tab-pane fade in active" id="careers">
-				<section class="list-container ">
-					<div class="wrap">
-						<h2 class="blue">Join the Apogee Family</h2>
-						<p class="p-wrap intro">More than any single attribute, our culture is most responsible for our group’s success because one you join Apogee, you join a family.</p>
-						<ul class="three-list group">
-							<li>
-								<?php include('_svg/icon-heart.php'); ?>
-								<h3 class="blue">Physician-Owned &amp; Operated</h3>
-								<p>The largest, entirely physician-owned and operated Hospitalist group in the nation with one singular focus, Hospital Medicine.</p>
-							</li>
-							<li>
-								<?php include('_svg/icon-briefcase.php'); ?>
-								<h3 class="blue">Patient-Centered Focus</h3>
-								<p>Our guiding vision of, What’s best for the Patient is best for the Practice™, gave rise to a belief system that put our patients first.</p>
-							</li>
-							<li>
-								<?php include('_svg/icon-clipboard.php'); ?>
-								<h3 class="blue">Family-Oriented Culture</h3>
-								<p>Apogee’s infrastructure is designed specifically with the best interests of you and your family in mind.</p>
-							</li>
-						</ul>
-					</div>
+				<section class="map wrap">
+					<h2 class="blue">Physician Opportunities</h2>
+					<?php dynamic_sidebar('phy-map');?>
 				</section>
-				<section class="container professional-development" style="border-bottom: 0.05em solid #fff; ">
-					<div class="group">
-						<ul class="tabs third group">
-							<li class="active">
-								<a href="#apogee_university" data-toggle="tab">
-									<h2>Apogee University</h2>
-								</a>
-							</li>
-							<li>
-								<a href="#med_educ" data-toggle="tab">
-									<h2>Continuing Medical Education</h2>
-								</a>
-							</li>
-							<li>
-								<a href="#pds" data-toggle="tab">
-									<h2>Leadership Development</h2>
-								</a>
-							</li>
-						</ul>
-						<div class="tab-content two-third first">
-							<div class="tab-pane fade in active" id="apogee_university">
-								<h2>Apogee University</h2>
-								<p>Staying competitive in the market means constantly staying abreast of the latest research, best practices, and industry news. Each newly hired physician enjoys an all-expense paid trip to Apogee’s headquarters in Scottsdale, AZ for Apogee University. There, our doctors learn the guiding principals and vision of Apogee from Chairman, Dr. Michael Gregory. Best practices are taught and doctors leave feeling inspired and equipped to provide excellent patient care.</p>
+
+				<section class="list-container wrap">
+					<h2 class="blue">Join the Apogee Family</h2>
+					<p class="p-wrap intro">More than any single attribute, our culture is most responsible for our group’s success.</p>
+					<ul class="three-list group">
+						<li>
+							<?php include('_svg/icon-heart.php'); ?>
+							<h3 class="blue">Work Life Balance</h3>
+							<p>Apogee’s infrastructure is designed specifically with the best interests of you and your family in mind.</p>
+						</li>
+						<li>
+							<?php include('_svg/icon-briefcase.php'); ?>
+							<h3 class="blue">Career Development</h3>
+							<p>Expand your mind with ongoing, innovative education through Apogee University and Program Director Academy.</p>
+						</li>
+						<li>
+							<?php include('_svg/icon-clipboard.php'); ?>
+							<h3 class="blue">Patients Come First</h3>
+							<p>Our guiding vision of, What’s best for the Patient is best for the Practice™, gave rise to a belief system that put our patients and doctors first.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="container visa">
+					<div class="wrap group">
+						<div class="intro">
+							<h2 class="blue">Visa to Green Card</h2>
+							<p class="p-wrap intro">Apogee has an in-house immigration attorney which enables us to sponsor physicians who are on a J-1 visa waiver, or a non-immigrant H-1B visa as we renew the H-1B visa.</p>
+						</div>
+						<div class="left sixty">
+							<div class="container-top">
+								<h3 class="blue">What Apogee Does for You</h3>
+								<ul>
+									<li>Covers the cost of services and filings</li>
+									<li>Process the non-immigrant H-4 visa for a spouse and child/children</li>
+									<li>Begin the permanent sponsorship from the first day an employment agreement is signed and received by our office, allowing our physicians to obtain their green card up to one year earlier than they would have otherwise</li>
+								</ul>
 							</div>
 							<div class="tab-pane fade in" id="med_educ">
 								<h2>Continuing Medical Education</h2>
@@ -277,75 +271,30 @@ get_header(); ?>
 		<!-- END PHYSICIAN SECTION -->
 		<!-- BEGIN NPPA SECTION -->
 			<div class="tab-pane fade in" id="services">
-				<section class="list-container ">
-					<div class="wrap">
-						<h2 class="blue">NP/PA Section</h2>
-						<p class="p-wrap intro">More than any single attribute, our culture is most responsible for our group’s success.</p>
-						<ul class="three-list group">
-							<li>
-								<?php include('_svg/icon-heart.php'); ?>
-								<h3 class="blue">Work Life Balance</h3>
-								<p>Apogee’s infrastructure is designed specifically with the best interests of you and your family in mind.</p>
-							</li>
-							<li>
-								<?php include('_svg/icon-briefcase.php'); ?>
-								<h3 class="blue">Career Development</h3>
-								<p>Expand your mind with ongoing, innovative education through Apogee University and Program Director Academy.</p>
-							</li>
-							<li>
-								<?php include('_svg/icon-clipboard.php'); ?>
-								<h3 class="blue">Patients Come First</h3>
-								<p>Our guiding vision of, What’s best for the Patient is best for the Practice™, gave rise to a belief system that put our patients and doctors first.</p>
-							</li>
-						</ul>
-					</div>
-					<h2 style="margin: 3em auto -1em;">Professional Development</h2>
+				<section class="map">
+					<h2 class="blue"> Nurse Practitioners Opportunities</h2>
+					<?php dynamic_sidebar('np-map');?>
 				</section>
-				<section class="container professional-development">
-					<div class="group">
-						<div class="tab-content two-third first">
-							<div class="tab-pane fade in active" id="apogee_pre">
-								<h2>Apogee University Pre-course</h2>
-								<p>Apogee University's pre-course is offered to physicians and non-physician practitioners. Joshua Rosenberg, D.O., Vice President of Clinical Operations, will review clinical scenarios common to the practice of inpatient medicine. Each scenario will begin with a presentation including but not limited to history, exam, medical decision-making, admitting orders, and discussion will include caveats particular to the case topic. Common considerations will be highlighted as well as any special caveats. Collaboration with physician counterparts is a common theme of the course.</p>
-								<h3>Diseases and discussions to be reviewed will include:</h3>
-								<ul>
-									<li>Common Cardiovascular diseases</li>
-									<li>Common Pulmonary diseases</li>
-									<li>UTI and Acute Renal Failure</li>
-									<li>Cellulitis</li>
-									<li>Gastrointestinal Bleeding</li>
-									<li>Core Measures</li>
-									<li>Caveats to the NPP's practice of inpatient medicine</li>
-									<li>Opportunities and strategies for NPPs to collaborate with their physician counterparts</li>
-								</ul>
-							</div>
-							<div class="tab-pane fade in" id="np_uni">
-								<h2>Apogee University</h2>
-								<p>Staying competitive in the market means constantly staying abreast of the latest research, best practices, and industry news. Each newly hired physician enjoys an all-expense paid trip to Apogee’s headquarters in Scottsdale, AZ for Apogee University. There, our doctors learn the guiding principles and vision of Apogee from Chairman, Dr. Michael Gregory. Best practices are taught and doctors leave feeling inspired and equipped to provide excellent patient care.</p>
-							</div>
-							<div class="tab-pane fade in" id="np_med">
-								<h2>Continuing Medical Education</h2>
-								<p>Apogee is certified by AFFP through the Accrediting Council for Continuing Medical Education. We provide our physicians with CME courses so they can receive credit and stay up to date with the ever changing medical field.</p>
-							</div>
-						</div>
-						<ul class="tabs third group">
-							<li class="active">
-								<a href="#apogee_pre" data-toggle="tab">
-									<h2>Apogee University Pre-course</h2>
-								</a>
-							</li>
-							<li>
-								<a href="#np_uni" data-toggle="tab">
-									<h2>Apogee University</h2>
-								</a>
-							</li>
-							<li>
-								<a href="#np_med" data-toggle="tab">
-									<h2>Continuing Medical Education</h2>
-								</a>
-							</li>
-						</ul>
-					</div>
+				<section class="list-container wrap">
+					<h2 class="blue">Services Section</h2>
+					<p class="p-wrap intro">More than any single attribute, our culture is most responsible for our group’s success.</p>
+					<ul class="three-list group">
+						<li>
+							<?php include('_svg/icon-heart.php'); ?>
+							<h3 class="blue">Work Life Balance</h3>
+							<p>Apogee’s infrastructure is designed specifically with the best interests of you and your family in mind.</p>
+						</li>
+						<li>
+							<?php include('_svg/icon-briefcase.php'); ?>
+							<h3 class="blue">Career Development</h3>
+							<p>Expand your mind with ongoing, innovative education through Apogee University and Program Director Academy.</p>
+						</li>
+						<li>
+							<?php include('_svg/icon-clipboard.php'); ?>
+							<h3 class="blue">Patients Come First</h3>
+							<p>Our guiding vision of, What’s best for the Patient is best for the Practice™, gave rise to a belief system that put our patients and doctors first.</p>
+						</li>
+					</ul>
 				</section>
 			</div>
 		<!-- END NPPA SECTION -->

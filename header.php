@@ -25,6 +25,7 @@
 	<link rel="icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" type="image/x-icon">
 	<!-- jQuery -->
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://use.fontawesome.com/5cd2947846.js"></script>
 	<?php wp_head(); ?>
 </head>
 

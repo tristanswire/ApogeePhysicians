@@ -208,8 +208,9 @@ img {
 	margin: 0 auto;
 }
 
-/*************** FILE IMPORTS ***************/
 
+/*************** FILE IMPORTS ***************/
+@import "map";
 @import "carousel-slick";
 @import "aos";
 @import "bootstrap";
