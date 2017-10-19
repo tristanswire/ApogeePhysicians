@@ -35,6 +35,12 @@ get_header(); ?>
 	<div class="tab-content">
 		<!-- BEGIN PHYSICIAN SECTION -->
 			<div class="tab-pane fade in active" id="careers">
+
+				<section class="map wrap">
+					<h2 class="blue">Physician Opportunities</h2>
+					<?php dynamic_sidebar('phy-map');?>
+				</section>
+
 				<section class="list-container wrap">
 					<h2 class="blue">Join the Apogee Family</h2>
 					<p class="p-wrap intro">More than any single attribute, our culture is most responsible for our group’s success.</p>
@@ -56,6 +62,8 @@ get_header(); ?>
 						</li>
 					</ul>
 				</section>
+
+
 				<section class="container visa">
 					<div class="wrap group">
 						<div class="intro">
@@ -223,6 +231,12 @@ get_header(); ?>
 		<!-- END PHYSICIAN SECTION -->
 		<!-- BEGIN NPPA SECTION -->
 			<div class="tab-pane fade in" id="services">
+
+				<section class="map">
+					<h2 class="blue"> Nurse Practitioners Opportunities</h2>
+					<?php dynamic_sidebar('np-map');?>
+				</section>
+
 				<section class="list-container wrap">
 					<h2 class="blue">Services Section</h2>
 					<p class="p-wrap intro">More than any single attribute, our culture is most responsible for our group’s success.</p>
